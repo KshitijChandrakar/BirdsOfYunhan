@@ -5,7 +5,7 @@ extends Node2D
 var is_correct = false
 const Circle = preload("res://Wire Puzzle/circle.gd")
 signal correct1
-
+signal incorrect
 
 # Called when the node enters the scene tree for the first time.
 var circles: Array[Circle] = []
@@ -31,8 +31,6 @@ func _ready() -> void:
 	allow_crossed_wires = true
 	only_cardinals = false
 	add_child(main_line)
-#	main_line.add_point(Vector2(side_offset,side_offset))
-#	main_line.add_point(Vector2(side_offset+spacing,side_offset+spacing))
 	
 	for y in range(3):
 		for x in range(3):
@@ -42,10 +40,6 @@ func _ready() -> void:
 								radius, default_color))
 	for i in [0, 1, 4, 2, 5, 8, 7, 3, 6]:
 		correct_sequence.add_point(circles[i].pos)
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 
 func is_connection_valid(start: Vector2, end: Vector2):
 	if not allow_crossed_wires:
@@ -105,15 +99,12 @@ func _draw() -> void:
 		blink_color(solved_color)
 	elif len(main_line.points) == 9 and main_line.points != correct_sequence.points:
 		is_correct = false
+		incorrect.emit()
 		print("is_correct", is_correct)
 		main_line.clear_points()
 		currently_selected = null
 	for circle in circles:
 		draw_circle(circle.pos, circle.radius, circle.color)
-			
-#	for line in lines:
-#		var start = line
-#		draw_line()
 
 
 

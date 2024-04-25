@@ -55,3 +55,4 @@ scale = Vector2(1.00417, 0.592593)
 
 [connection signal="showPuzzle" from="Lv1/PuzzleButton" to="pin_code" method="_on_puzzle_button_show_puzzle"]
 [connection signal="correct1" from="pin_code" to="Lv1/PuzzleButton" method="_on_pin_code_correct_1"]
+[connection signal="incorrect" from="pin_code" to="Lv1/PuzzleButton" method="_on_pin_code_incorrect"]

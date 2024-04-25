@@ -20,3 +20,8 @@ func _on_pin_code_correct_1():
 	print("Hi")
 	$"../../pin_code".visible = false
 	pass # Replace with function body.
+
+
+func _on_pin_code_incorrect():
+	$"../../pin_code".visible = false
+	pass # Replace with function body.
