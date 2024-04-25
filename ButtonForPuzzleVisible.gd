@@ -1,5 +1,5 @@
 extends Sprite2D
-
+signal showPuzzle
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,4 +12,11 @@ func _process(delta):
 func _input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if get_rect().has_point(to_local(event.position)):
-			$"../Scene2".visible = true
+			showPuzzle.emit()
+			#$"../../pin_code".visible = true
+			
+
+func _on_pin_code_correct_1():
+	print("Hi")
+	$"../../pin_code".visible = false
+	pass # Replace with function body.

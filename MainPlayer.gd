@@ -24,9 +24,11 @@ func _process(delta):
 			pass
 	
 	if lr == -1:
-		position.x = move_toward(position.x, (get_rect()["size"].x * -1 * scale.x), speed * delta)
-	elif lr == 1:
 		position.x = move_toward(position.x, windowSize.x, speed * delta)
+		$"../CharacterProfilessheet".frame = 1
+	elif lr == 1:
+		position.x = move_toward(position.x, (get_rect()["size"].x * -1 * scale.x), speed * delta)
+		$"../CharacterProfilessheet".frame = 0
 	#position = Vector2(0,0)
 
 func _input(event):
@@ -43,5 +45,4 @@ func _input(event):
 		lr = 0
 		
 		
-
 
