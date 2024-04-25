@@ -22,7 +22,7 @@ func _process(delta):
 			pass
 		elif (mousePos.y < position.y):
 			pass
-	
+	#position.x = move_toward(position.x, mouse.x, speed * delta)
 	if lr == -1:
 		position.x = move_toward(position.x, windowSize.x, speed * delta)
 		$"../CharacterProfilessheet".frame = 1
