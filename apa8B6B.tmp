@@ -1,0 +1,43 @@
+[gd_scene load_steps=9 format=3 uid="uid://bhcc4rsfkx5rp"]
+
+[ext_resource type="Texture2D" uid="uid://slmv47cshbir" path="res://Main Player.png" id="1_demgy"]
+[ext_resource type="Texture2D" uid="uid://2564t43p5kxp" path="res://icon.svg" id="3_3ddlr"]
+[ext_resource type="Script" path="res://MainPlayer.gd" id="3_krs04"]
+[ext_resource type="Script" path="res://ButtonForPuzzleVisible.gd" id="4_e60ck"]
+[ext_resource type="Script" path="res://Door.gd" id="7_5oo4s"]
+[ext_resource type="PackedScene" uid="uid://cjpcylsik4u1r" path="res://Scene2.tscn" id="8_l8r2r"]
+
+[sub_resource type="Gradient" id="Gradient_g0gnp"]
+offsets = PackedFloat32Array(0, 0.331169, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.214286, 0.214286, 0.214286, 1, 0.939717, 0.4518, 0.536684, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_yewr4"]
+gradient = SubResource("Gradient_g0gnp")
+
+[node name="Apartments" type="Node2D"]
+
+[node name="FloorPlan1" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(4.5, 646)
+texture = SubResource("GradientTexture1D_yewr4")
+centered = false
+script = ExtResource("3_krs04")
+
+[node name="MainPlayer" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(576, 323)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_demgy")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(234, 271)
+texture = ExtResource("3_3ddlr")
+script = ExtResource("4_e60ck")
+
+[node name="MainPlayer2" type="Sprite2D" parent="."]
+position = Vector2(920, 370)
+texture = ExtResource("1_demgy")
+script = ExtResource("7_5oo4s")
+
+[node name="Scene2" parent="." instance=ExtResource("8_l8r2r")]
+position = Vector2(76, 335)
