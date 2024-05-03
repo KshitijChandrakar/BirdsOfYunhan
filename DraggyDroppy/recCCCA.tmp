@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://6rbbwrpywntn"]
+
+[ext_resource type="Texture2D" uid="uid://slmv47cshbir" path="res://Main Player.png" id="1_1do3g"]
+[ext_resource type="Script" path="res://DraggyDroppy/Thingy.gd" id="2_727tm"]
+[ext_resource type="Script" path="res://DraggyDroppy/ShelfPlace.gd" id="2_mo1cm"]
+
+[sub_resource type="Gradient" id="Gradient_r2nte"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_g3rxk"]
+gradient = SubResource("Gradient_r2nte")
+
+[node name="Rectangle thigny" type="Node2D"]
+
+[node name="Shelf" type="Sprite2D" parent="."]
+position = Vector2(272, 323.5)
+scale = Vector2(2.12276, 649)
+texture = SubResource("GradientTexture1D_g3rxk")
+
+[node name="MainPlayer" type="Sprite2D" parent="Shelf"]
+position = Vector2(2.23766, -0.31433)
+scale = Vector2(0.808001, 0.000534499)
+texture = ExtResource("1_1do3g")
+script = ExtResource("2_mo1cm")
+
+[node name="Thingy" type="Sprite2D" parent="."]
+position = Vector2(1034, 102)
+scale = Vector2(0.554852, 0.327751)
+texture = ExtResource("1_1do3g")
+script = ExtResource("2_727tm")
+id = null
