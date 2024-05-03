@@ -3,6 +3,8 @@ extends Sprite2D
 var originalPos
 var dragging = false
 var placed = false
+var pressedPos
+var releasedPos
 @onready var destination = $"../Shelf/MainPlayer"
 func _ready():
 	originalPos = position
@@ -16,6 +18,7 @@ func _input(event):
 	if not placed:
 		if event is InputEventMouseButton:
 			if event.button_index == MOUSE_BUTTON_LEFT:
+			
 				if event.pressed and get_rect().has_point(to_local(event.position)):
 					dragging = true
 					offset = global_position - get_global_mouse_position()
