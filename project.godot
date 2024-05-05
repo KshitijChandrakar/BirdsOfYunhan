@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="MeghaDiProject"
-run/main_scene="res://apartments.tscn"
+run/main_scene="res://Settings Scenes/main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 

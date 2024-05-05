@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhcc4rsfkx5rp"]
+
+[ext_resource type="Texture2D" uid="uid://2564t43p5kxp" path="res://icon.svg" id="1_86uud"]
+[ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="2_ajaec"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(301, 300)
+scale = Vector2(2.70313, 2.8125)
+texture = ExtResource("1_86uud")
+script = ExtResource("2_ajaec")
+ScenePath = "res://Scenes/LivingRoom1.tscn"
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(795, 291)
+scale = Vector2(2.70313, 2.8125)
+texture = ExtResource("1_86uud")
+script = ExtResource("2_ajaec")
+ScenePath = "res://Settings Scenes/General.tscn"

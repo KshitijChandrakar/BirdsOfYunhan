@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dooyftild0qcb"]
+
+[ext_resource type="Texture2D" uid="uid://c3ixcg5hrr36w" path="res://Resources/bgs/elevator.png" id="1_177si"]
+[ext_resource type="Texture2D" uid="uid://cbbmu8gsg02n7" path="res://Resources/Arrow.png" id="2_2ka60"]
+[ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="3_0wxas"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_oy7rm"]
+
+[node name="Elevator" type="Node2D"]
+
+[node name="Elevator" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_177si")
+centered = false
+
+[node name="To Lobby" type="Sprite2D" parent="."]
+position = Vector2(56, 328)
+rotation = 3.14159
+scale = Vector2(0.373, 1)
+texture = ExtResource("2_2ka60")
+script = ExtResource("3_0wxas")
+ScenePath = "res://Scenes/Lobby.tscn"
+
+[node name="Elevator2" type="Sprite2D" parent="."]
+position = Vector2(426.258, 47.3629)
+scale = Vector2(305.234, 381.162)
+texture = SubResource("ImageTexture_oy7rm")
+script = ExtResource("3_0wxas")

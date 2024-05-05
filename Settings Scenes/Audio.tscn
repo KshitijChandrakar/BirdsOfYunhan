@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmfmles7n6a8y"]
+
+[ext_resource type="Texture2D" uid="uid://duuu30be6cugk" path="res://Resources/UImenus/Settings/Audio/audiomaster.png" id="1_epadp"]
+[ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="2_hu6k6"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_ri7ib"]
+
+[node name="Audio" type="Node2D"]
+
+[node name="Audiomaster" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_epadp")
+centered = false
+
+[node name="To Start Screen" type="Sprite2D" parent="."]
+position = Vector2(75.5119, 31.2449)
+scale = Vector2(-61.8459, 76.2591)
+texture = SubResource("ImageTexture_ri7ib")
+script = ExtResource("2_hu6k6")
+ScenePath = "res://Settings Scenes/main.tscn"
+
+[node name="General" type="Sprite2D" parent="."]
+position = Vector2(264.205, 111)
+scale = Vector2(-137.051, 76.2591)
+texture = SubResource("ImageTexture_ri7ib")
+script = ExtResource("2_hu6k6")
+ScenePath = "res://Settings Scenes/General.tscn"
+
+[node name="Audio" type="Sprite2D" parent="."]
+position = Vector2(517, 115)
+scale = Vector2(-137.051, 76.2591)
+texture = SubResource("ImageTexture_ri7ib")
+script = ExtResource("2_hu6k6")
+ScenePath = "res://Settings Scenes/Audio.tscn"
+
+[node name="Credits" type="Sprite2D" parent="."]
+position = Vector2(773, 165)
+rotation = 0.347321
+scale = Vector2(-137.051, 76.2591)
+texture = SubResource("ImageTexture_ri7ib")
+script = ExtResource("2_hu6k6")
+ScenePath = "res://Settings Scenes/Credits.tscn"

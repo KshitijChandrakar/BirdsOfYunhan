@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dntvl2v4xubom"]
+
+[ext_resource type="Texture2D" uid="uid://cywd2l6ap6wno" path="res://Resources/bgs/lobby.png" id="1_skdv4"]
+[ext_resource type="Texture2D" uid="uid://cbbmu8gsg02n7" path="res://Resources/Arrow.png" id="2_xdfs1"]
+[ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="3_pmwhc"]
+
+[node name="Lobby" type="Node2D"]
+
+[node name="Lobby" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_skdv4")
+centered = false
+
+[node name="To Elevator" type="Sprite2D" parent="."]
+position = Vector2(1096, 328)
+scale = Vector2(0.373016, 1)
+texture = ExtResource("2_xdfs1")
+script = ExtResource("3_pmwhc")
+ScenePath = "res://Scenes/Elevator.tscn"
+
+[node name="To Living Room 3" type="Sprite2D" parent="."]
+position = Vector2(56, 328)
+rotation = 3.14159
+scale = Vector2(0.373, 1)
+texture = ExtResource("2_xdfs1")
+script = ExtResource("3_pmwhc")
+ScenePath = "res://Scenes/LivingRoom2.tscn"

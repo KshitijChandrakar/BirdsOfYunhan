@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8pjdit3ah6fm"]
+
+[ext_resource type="Texture2D" uid="uid://cdro2r0bukvtv" path="res://Resources/bgs/kitchen.png" id="1_h6lye"]
+[ext_resource type="Texture2D" uid="uid://cbbmu8gsg02n7" path="res://Resources/Arrow.png" id="2_0j4nj"]
+[ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="2_unkc0"]
+
+[node name="Kitchen" type="Node2D"]
+
+[node name="Kitchen" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_h6lye")
+centered = false
+
+[node name="Door" type="Sprite2D" parent="."]
+position = Vector2(1096, 328)
+scale = Vector2(0.373016, 1)
+texture = ExtResource("2_0j4nj")
+script = ExtResource("2_unkc0")
+ScenePath = "res://Scenes/LivingRoom1.tscn"

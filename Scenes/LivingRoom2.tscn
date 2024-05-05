@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6m4gy0pdm1kq"]
+
+[ext_resource type="Texture2D" uid="uid://ch7nenlmnexr2" path="res://Resources/bgs/lv2.png" id="1_svbio"]
+[ext_resource type="Texture2D" uid="uid://cbbmu8gsg02n7" path="res://Resources/Arrow.png" id="2_2odnk"]
+[ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="3_id42h"]
+
+[node name="LivingRoom2" type="Node2D"]
+
+[node name="Lv2" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_svbio")
+centered = false
+
+[node name="To Lobby" type="Sprite2D" parent="."]
+position = Vector2(1096, 328)
+scale = Vector2(0.373016, 1)
+texture = ExtResource("2_2odnk")
+script = ExtResource("3_id42h")
+ScenePath = "res://Scenes/Lobby.tscn"
+
+[node name="To Living Room 1" type="Sprite2D" parent="."]
+position = Vector2(56, 328)
+rotation = 3.14159
+scale = Vector2(0.373, 1)
+texture = ExtResource("2_2odnk")
+script = ExtResource("3_id42h")
+ScenePath = "res://Scenes/LivingRoom1.tscn"
