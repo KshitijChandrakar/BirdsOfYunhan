@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cifxng8p7u2pe"
-path="res://.godot/imported/credits-1.png-a40c56910287c1310975a2991394bedc.ctex"
+path="res://.godot/imported/MeghaSharma.png-e63b72a4dcbc80b9b3996ebdebee71a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/UImenus/Settings/Credits/credits-1.png"
-dest_files=["res://.godot/imported/credits-1.png-a40c56910287c1310975a2991394bedc.ctex"]
+source_file="res://Resources/UImenus/Settings/Credits/MeghaSharma.png"
+dest_files=["res://.godot/imported/MeghaSharma.png-e63b72a4dcbc80b9b3996ebdebee71a0.ctex"]
 
 [params]
 

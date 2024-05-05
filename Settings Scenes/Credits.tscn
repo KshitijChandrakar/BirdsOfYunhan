@@ -1,15 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://mbwmiqtm346x"]
+[gd_scene load_steps=6 format=3 uid="uid://mbwmiqtm346x"]
 
-[ext_resource type="Texture2D" uid="uid://cifxng8p7u2pe" path="res://Resources/UImenus/Settings/Credits/credits-1.png" id="1_l35qu"]
+[ext_resource type="Texture2D" uid="uid://wymi4axyuxoi" path="res://Resources/UImenus/Settings/Credits/Connie.png" id="1_7ehxt"]
 [ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="2_cnn0r"]
+[ext_resource type="Script" path="res://GlobalScripts/Hover.gd" id="3_ki6qv"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_udctg"]
 
+[sub_resource type="ImageTexture" id="ImageTexture_xvr4c"]
+
 [node name="Credits" type="Node2D"]
 
-[node name="Credits-1" type="Sprite2D" parent="."]
+[node name="Credits Bg" type="Sprite2D" parent="."]
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("1_l35qu")
+texture = ExtResource("1_7ehxt")
 centered = false
 
 [node name="To Start Screen" type="Sprite2D" parent="."]
@@ -40,3 +43,52 @@ scale = Vector2(-137.051, 76.2591)
 texture = SubResource("ImageTexture_udctg")
 script = ExtResource("2_cnn0r")
 ScenePath = "res://Settings Scenes/Credits.tscn"
+
+[node name="Aashi Pandey" type="Sprite2D" parent="."]
+position = Vector2(140, 374)
+scale = Vector2(181, -32)
+texture = SubResource("ImageTexture_xvr4c")
+script = ExtResource("3_ki6qv")
+ImagePath = "res://Resources/UImenus/Settings/Credits/AashiPandey.png"
+
+[node name="Megha Sharma" type="Sprite2D" parent="."]
+position = Vector2(140, 336)
+scale = Vector2(181, -32)
+texture = SubResource("ImageTexture_xvr4c")
+script = ExtResource("3_ki6qv")
+ImagePath = "res://Resources/UImenus/Settings/Credits/MeghaSharma.png"
+
+[node name="Kshitij Chandrakar" type="Sprite2D" parent="."]
+position = Vector2(140, 412)
+scale = Vector2(230, -32)
+texture = SubResource("ImageTexture_xvr4c")
+script = ExtResource("3_ki6qv")
+ImagePath = "res://Resources/UImenus/Settings/Credits/KshitijChandrakar.png"
+
+[node name="Mayank Morkhade" type="Sprite2D" parent="."]
+position = Vector2(140, 452)
+scale = Vector2(230, -32)
+texture = SubResource("ImageTexture_xvr4c")
+script = ExtResource("3_ki6qv")
+ImagePath = "res://Resources/UImenus/Settings/Credits/MayankMorkhade.png"
+
+[node name="Milly Singh" type="Sprite2D" parent="."]
+position = Vector2(517, 336)
+scale = Vector2(152, -32)
+texture = SubResource("ImageTexture_xvr4c")
+script = ExtResource("3_ki6qv")
+ImagePath = "res://Resources/UImenus/Settings/Credits/MillySingh.png"
+
+[node name="Connie" type="Sprite2D" parent="."]
+position = Vector2(517, 374)
+scale = Vector2(106, -32)
+texture = SubResource("ImageTexture_xvr4c")
+script = ExtResource("3_ki6qv")
+ImagePath = "res://Resources/UImenus/Settings/Credits/Connie.png"
+
+[node name="JadePalaceYaya" type="Sprite2D" parent="."]
+position = Vector2(517, 412)
+scale = Vector2(210, -32)
+texture = SubResource("ImageTexture_xvr4c")
+script = ExtResource("3_ki6qv")
+ImagePath = "res://Resources/UImenus/Settings/Credits/JadePalaceYaya.png"
