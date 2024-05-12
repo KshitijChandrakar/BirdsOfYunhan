@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://3eqkhb812dsl"]
+
+[ext_resource type="Texture2D" uid="uid://55hwsetfatj5" path="res://Resources/bgs/GamingDate.png" id="1_86ett"]
+[ext_resource type="Script" path="res://GlobalScripts/ChangeSceneOnSignal.gd" id="2_6niww"]
+[ext_resource type="Texture2D" uid="uid://bgohuk8umplrn" path="res://Resources/bgs/Dots/dots puzzle.png" id="3_y4u2n"]
+[ext_resource type="Script" path="res://GlobalScripts/Wires.gd" id="4_j6lvi"]
+[ext_resource type="Texture2D" uid="uid://xq6b6enwep3m" path="res://Resources/bgs/Dots/flower.png" id="5_g2ydm"]
+[ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/Wires2.gd" id="6_5gukv"]
+[ext_resource type="Texture2D" uid="uid://dtgtwrqk4yck1" path="res://Resources/bgs/Dots/heart.png" id="7_l7csx"]
+
+[node name="Gaming" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_86ett")
+centered = false
+script = ExtResource("2_6niww")
+ScenePath = "res://Scenes/kitchen_date.tscn"
+
+[node name="MainPlayer" type="Sprite2D" parent="."]
+position = Vector2(274, 472)
+scale = Vector2(0.6, 0.8)
+texture = ExtResource("3_y4u2n")
+centered = false
+script = ExtResource("4_j6lvi")
+
+[node name="Icon2" type="Sprite2D" parent="MainPlayer"]
+position = Vector2(182.423, 50.8564)
+scale = Vector2(2, 2)
+texture = ExtResource("5_g2ydm")
+script = ExtResource("6_5gukv")
+id = 23
+
+[node name="Icon3" type="Sprite2D" parent="MainPlayer"]
+position = Vector2(566.125, 103.643)
+scale = Vector2(3.20695, 1.15601)
+texture = ExtResource("5_g2ydm")
+script = ExtResource("6_5gukv")
+id = 23
+
+[node name="Icon5" type="Sprite2D" parent="MainPlayer"]
+position = Vector2(342.442, 125.916)
+scale = Vector2(2, 2)
+texture = ExtResource("7_l7csx")
+script = ExtResource("6_5gukv")
+id = 25
+
+[node name="Icon6" type="Sprite2D" parent="MainPlayer"]
+position = Vector2(775.086, 60.6639)
+scale = Vector2(4.57245, 1.48045)
+texture = ExtResource("7_l7csx")
+script = ExtResource("6_5gukv")
+id = 25
+
+[connection signal="finished" from="MainPlayer" to="BG" method="_on_main_player_finished"]

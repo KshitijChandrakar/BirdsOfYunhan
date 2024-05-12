@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://btjffyptb8ylr"]
+
+[ext_resource type="Texture2D" uid="uid://slmv47cshbir" path="res://Main Player.png" id="1_3msbm"]
+[ext_resource type="Texture2D" uid="uid://2564t43p5kxp" path="res://icon.svg" id="2_uks3q"]
+[ext_resource type="Script" path="res://GlobalScripts/Wires.gd" id="3_2c1cc"]
+[ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/Wires2.gd" id="3_42a7d"]
+
+[node name="Dots Game" type="Node2D"]
+
+[node name="MainPlayer" type="Sprite2D" parent="."]
+scale = Vector2(1.59916, 0.700957)
+texture = ExtResource("1_3msbm")
+centered = false
+script = ExtResource("3_2c1cc")
+
+[node name="Icon2" type="Sprite2D" parent="MainPlayer"]
+position = Vector2(45.4927, 124.473)
+scale = Vector2(0.530065, 1.00867)
+texture = ExtResource("2_uks3q")
+script = ExtResource("3_42a7d")
+id = 23
+
+[node name="Icon3" type="Sprite2D" parent="MainPlayer"]
+position = Vector2(181.027, 223.503)
+scale = Vector2(0.561727, 0.854509)
+texture = ExtResource("2_uks3q")
+script = ExtResource("3_42a7d")
+id = 23
+
+[node name="Icon5" type="Sprite2D" parent="MainPlayer"]
+position = Vector2(79.4169, 313.857)
+scale = Vector2(0.561727, 0.854509)
+texture = ExtResource("2_uks3q")
+script = ExtResource("3_42a7d")
+id = 25
+
+[node name="Icon6" type="Sprite2D" parent="MainPlayer"]
+position = Vector2(170.715, 99.8635)
+scale = Vector2(0.561727, 0.854509)
+texture = ExtResource("2_uks3q")
+script = ExtResource("3_42a7d")
+id = 25

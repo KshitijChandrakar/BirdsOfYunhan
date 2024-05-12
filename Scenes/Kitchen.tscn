@@ -1,19 +1,55 @@
-[gd_scene load_steps=4 format=3 uid="uid://c8pjdit3ah6fm"]
+[gd_scene load_steps=10 format=3 uid="uid://c8pjdit3ah6fm"]
 
-[ext_resource type="Texture2D" uid="uid://cdro2r0bukvtv" path="res://Resources/bgs/kitchen.png" id="1_h6lye"]
-[ext_resource type="Texture2D" uid="uid://cbbmu8gsg02n7" path="res://Resources/Arrow.png" id="2_0j4nj"]
+[ext_resource type="Texture2D" uid="uid://b6jm102puhcea" path="res://Resources/bgs/Kitchen/KitchenBg.png" id="1_2c5qb"]
 [ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="2_unkc0"]
+[ext_resource type="Texture2D" uid="uid://p42ov0x4lr2p" path="res://Resources/Arrow.png" id="2_xhtm7"]
+[ext_resource type="Texture2D" uid="uid://dek1alu4taidx" path="res://Resources/bgs/Kitchen/KitchenCabinetClose.png" id="4_2cp4w"]
+[ext_resource type="Script" path="res://GlobalScripts/ButtonForPuzzleVisible.gd" id="5_5rbo4"]
+[ext_resource type="Texture2D" uid="uid://b1dtl1kwppt0k" path="res://Resources/bgs/Kitchen/Lower Cabinet Open.png" id="6_623ma"]
+[ext_resource type="Script" path="res://GlobalScripts/CloseButton.gd" id="6_byhwe"]
+[ext_resource type="Texture2D" uid="uid://utgusqb238ar" path="res://Resources/bgs/Kitchen/GarbageCan.png" id="8_fvf8e"]
+[ext_resource type="Texture2D" uid="uid://coqlwoqnlers2" path="res://Resources/bgs/Kitchen/GarbageCannot.png" id="9_rv55n"]
 
 [node name="Kitchen" type="Node2D"]
 
 [node name="Kitchen" type="Sprite2D" parent="."]
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("1_h6lye")
+texture = ExtResource("1_2c5qb")
 centered = false
 
 [node name="Door" type="Sprite2D" parent="."]
-position = Vector2(1096, 328)
-scale = Vector2(0.373016, 1)
-texture = ExtResource("2_0j4nj")
+visible = false
+position = Vector2(1088, 336)
+scale = Vector2(0.517869, 0.477528)
+texture = ExtResource("2_xhtm7")
 script = ExtResource("2_unkc0")
 ScenePath = "res://Scenes/LivingRoom1.tscn"
+mode = 1
+
+[node name="KitchenCabinetClose" type="Sprite2D" parent="."]
+position = Vector2(861, 374)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_2cp4w")
+script = ExtResource("5_5rbo4")
+
+[node name="LowerCabinetOpen" type="Sprite2D" parent="KitchenCabinetClose"]
+visible = false
+position = Vector2(0, 32.97)
+texture = ExtResource("6_623ma")
+region_rect = Rect2(0, 0, 0.21, 0)
+script = ExtResource("6_byhwe")
+
+[node name="GarbageCan" type="Sprite2D" parent="KitchenCabinetClose"]
+visible = false
+z_index = 1
+position = Vector2(5, 23.3333)
+texture = ExtResource("8_fvf8e")
+
+[node name="GarbageCannot" type="Sprite2D" parent="KitchenCabinetClose"]
+visible = false
+z_index = 1
+position = Vector2(136.667, 25.0001)
+texture = ExtResource("9_rv55n")
+script = ExtResource("6_byhwe")
+
+[connection signal="closed" from="KitchenCabinetClose/GarbageCannot" to="Door" method="_on_garbage_cannot_closed"]

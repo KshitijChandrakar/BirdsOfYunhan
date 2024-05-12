@@ -2,35 +2,46 @@ extends Sprite2D
 @export var id = 10
 var originalPos
 var dragging = false
-var placed = false
+@export var draggable = false
+@export var placed = false
+@export var interated = false
 var pressedPos
 var releasedPos
-@onready var destination = $"../Shelf/MainPlayer"
+@export var Base_String = "../Blank"
+@export var Total = 23
+var destination = []
 func _ready():
 	originalPos = position
-func _process(delta):
+	
+	if draggable:
+		for i in range(1, Total + 1):
+			var curStr = Base_String + str(i)
+			destination.append(get_node(curStr))
+func _process(_delta):
 	pass
 	#print($"../Shelf/MainPlayer".get_rect(), get_rect())
 	
 func _input(event):
 	pass
 	#offset = Vector2(0,0)
-	if not placed:
+	if not placed and draggable:
 		if event is InputEventMouseButton:
 			if event.button_index == MOUSE_BUTTON_LEFT:
 			
 				if event.pressed and get_rect().has_point(to_local(event.position)):
 					dragging = true
-					offset = global_position - get_global_mouse_position()
+					#offset = global_position - get_global_mouse_position()
 				elif dragging:
+				
 					dragging = false
 		
 		if dragging:
-			global_position = get_global_mouse_position() + offset
 			
-			if destination.get_indexed("id") == id and destination.get_rect().has_point(destination.to_local(event.position)):
-				position = destination.to_global(destination.get_indexed("position"))
-				placed = true
-		else:
-			global_position = originalPos
+			global_position = get_global_mouse_position()
+			for i in range(len(destination)):
+				if destination[i].get_indexed("id") == id and destination[i].get_rect().has_point(destination[i].to_local(event.position)) and destination[i].get_indexed("placed") == false:
+					position = destination[i].get_indexed("position")
+					placed = true
+					destination[i].placed = true
+					
 		

@@ -1,0 +1,1057 @@
+[gd_scene load_steps=21 format=3 uid="uid://bmmct0mqv4pn2"]
+
+[ext_resource type="Script" path="res://Puzzles/Packing Game/packing.gd" id="1_iyrc4"]
+[ext_resource type="Texture2D" uid="uid://diuxgb06yr656" path="res://Resources/bgs/Packing Game/Packing Game BG.png" id="2_pq4qw"]
+[ext_resource type="Texture2D" uid="uid://c5g5abwxcg07h" path="res://Resources/bgs/Packing Game/Layer 8.png" id="3_piydg"]
+[ext_resource type="Texture2D" uid="uid://cvx65a2nd5ymt" path="res://Resources/bgs/Packing Game/Layer 7.png" id="5_8igmv"]
+[ext_resource type="Texture2D" uid="uid://djgnwawuurels" path="res://Resources/bgs/Packing Game/Layer 9.png" id="6_rhany"]
+[ext_resource type="Texture2D" uid="uid://rew1lqbq8rbb" path="res://Resources/bgs/Packing Game/Layer 11.png" id="7_ylu10"]
+[ext_resource type="Texture2D" uid="uid://conlitm4lf0qs" path="res://Resources/bgs/Packing Game/Layer 10 copy.png" id="8_wn450"]
+[ext_resource type="Texture2D" uid="uid://caxuai53dkc1t" path="res://Resources/bgs/Packing Game/Layer 12.png" id="9_dnbwk"]
+[ext_resource type="Texture2D" uid="uid://dlbue1l6cj8er" path="res://Resources/bgs/Packing Game/Layer 13.png" id="10_8n664"]
+[ext_resource type="Script" path="res://Puzzles/DraggyDroppy/Thingy.gd" id="10_dlkv1"]
+[ext_resource type="Texture2D" uid="uid://ccxd15uohkw4h" path="res://Resources/bgs/Packing Game/Layer 14.png" id="11_4ecwa"]
+[ext_resource type="Texture2D" uid="uid://cnlygndfd5ygc" path="res://Resources/bgs/Packing Game/Layer 16.png" id="12_vln36"]
+[ext_resource type="Texture2D" uid="uid://bl3rlgfu1qf0r" path="res://Resources/bgs/Packing Game/Layer 17.png" id="13_vc54k"]
+[ext_resource type="Texture2D" uid="uid://c8byu1kwlqeq8" path="res://Resources/bgs/Packing Game/Layer 18.png" id="14_cl1js"]
+[ext_resource type="Texture2D" uid="uid://cgv81iyajapa4" path="res://Resources/bgs/Packing Game/Layer 20.png" id="15_onsjt"]
+[ext_resource type="Texture2D" uid="uid://cx0wyefpw584i" path="res://Resources/UImenus/Blank.png" id="16_3nweq"]
+[ext_resource type="Texture2D" uid="uid://b3ybsbnw2p8t7" path="res://Resources/bgs/Packing Game/Layer 21.png" id="16_c13vq"]
+[ext_resource type="Texture2D" uid="uid://cfxvilwxxjd73" path="res://Resources/bgs/Packing Game/Layer 19.png" id="17_ytfan"]
+[ext_resource type="Texture2D" uid="uid://dmnwute5gsita" path="res://Resources/bgs/Packing Game/RingBox.png" id="19_k3r1w"]
+[ext_resource type="Script" path="res://Puzzles/Packing Game/RingBox.gd" id="20_nqhmn"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_iyrc4")
+Total = 271
+metadata/_edit_horizontal_guides_ = [-19.0]
+
+[node name="Background" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_pq4qw")
+centered = false
+
+[node name="Object1" type="Sprite2D" parent="."]
+position = Vector2(1023, 212)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_piydg")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Object2" type="Sprite2D" parent="."]
+position = Vector2(1022, 89)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_8igmv")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Object3" type="Sprite2D" parent="."]
+position = Vector2(985, 334)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6_rhany")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Object4" type="Sprite2D" parent="."]
+position = Vector2(1056, 333)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("7_ylu10")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Object5" type="Sprite2D" parent="."]
+position = Vector2(986, 410)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("8_wn450")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Object6" type="Sprite2D" parent="."]
+position = Vector2(1060, 407)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("9_dnbwk")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Object7" type="Sprite2D" parent="."]
+position = Vector2(987, 514)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_8n664")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Object8" type="Sprite2D" parent="."]
+position = Vector2(1059, 517)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("11_4ecwa")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Object9" type="Sprite2D" parent="."]
+position = Vector2(132, 139)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("12_vln36")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Object10" type="Sprite2D" parent="."]
+position = Vector2(161, 201)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("13_vc54k")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Object11" type="Sprite2D" parent="."]
+position = Vector2(132, 528)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("14_cl1js")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Object12" type="Sprite2D" parent="."]
+position = Vector2(159, 365)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("15_onsjt")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Object13" type="Sprite2D" parent="."]
+position = Vector2(81, 377)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("16_c13vq")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Object14" type="Sprite2D" parent="."]
+position = Vector2(104, 282)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("17_ytfan")
+script = ExtResource("10_dlkv1")
+draggable = true
+Total = 129
+
+[node name="Blank1" type="Sprite2D" parent="."]
+position = Vector2(384, 268)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank2" type="Sprite2D" parent="."]
+position = Vector2(329, 177)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank3" type="Sprite2D" parent="."]
+position = Vector2(359, 178)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank4" type="Sprite2D" parent="."]
+position = Vector2(393, 179)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank5" type="Sprite2D" parent="."]
+position = Vector2(428, 180)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank6" type="Sprite2D" parent="."]
+position = Vector2(473, 179)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank7" type="Sprite2D" parent="."]
+position = Vector2(512, 178)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank8" type="Sprite2D" parent="."]
+position = Vector2(546, 179)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank9" type="Sprite2D" parent="."]
+position = Vector2(586, 179)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank10" type="Sprite2D" parent="."]
+position = Vector2(620, 181)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank11" type="Sprite2D" parent="."]
+position = Vector2(662, 183)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank12" type="Sprite2D" parent="."]
+position = Vector2(695, 181)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank13" type="Sprite2D" parent="."]
+position = Vector2(733, 182)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank14" type="Sprite2D" parent="."]
+position = Vector2(766, 182)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank15" type="Sprite2D" parent="."]
+position = Vector2(806, 177)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank16" type="Sprite2D" parent="."]
+position = Vector2(843, 181)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank17" type="Sprite2D" parent="."]
+position = Vector2(843, 181)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank18" type="Sprite2D" parent="."]
+position = Vector2(341, 234)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank19" type="Sprite2D" parent="."]
+position = Vector2(371, 235)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank20" type="Sprite2D" parent="."]
+position = Vector2(405, 236)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank21" type="Sprite2D" parent="."]
+position = Vector2(440, 237)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank22" type="Sprite2D" parent="."]
+position = Vector2(485, 236)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank23" type="Sprite2D" parent="."]
+position = Vector2(524, 235)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank24" type="Sprite2D" parent="."]
+position = Vector2(558, 236)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank25" type="Sprite2D" parent="."]
+position = Vector2(598, 236)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank26" type="Sprite2D" parent="."]
+position = Vector2(632, 238)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank27" type="Sprite2D" parent="."]
+position = Vector2(674, 240)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank28" type="Sprite2D" parent="."]
+position = Vector2(707, 238)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank29" type="Sprite2D" parent="."]
+position = Vector2(745, 239)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank30" type="Sprite2D" parent="."]
+position = Vector2(778, 239)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank31" type="Sprite2D" parent="."]
+position = Vector2(818, 234)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank32" type="Sprite2D" parent="."]
+position = Vector2(855, 238)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank33" type="Sprite2D" parent="."]
+position = Vector2(855, 238)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank34" type="Sprite2D" parent="."]
+position = Vector2(323, 318)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank35" type="Sprite2D" parent="."]
+position = Vector2(353, 319)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank36" type="Sprite2D" parent="."]
+position = Vector2(387, 320)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank37" type="Sprite2D" parent="."]
+position = Vector2(422, 321)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank38" type="Sprite2D" parent="."]
+position = Vector2(467, 320)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank39" type="Sprite2D" parent="."]
+position = Vector2(506, 319)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank40" type="Sprite2D" parent="."]
+position = Vector2(540, 320)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank41" type="Sprite2D" parent="."]
+position = Vector2(580, 320)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank42" type="Sprite2D" parent="."]
+position = Vector2(614, 322)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank43" type="Sprite2D" parent="."]
+position = Vector2(656, 324)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank44" type="Sprite2D" parent="."]
+position = Vector2(689, 322)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank45" type="Sprite2D" parent="."]
+position = Vector2(727, 323)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank46" type="Sprite2D" parent="."]
+position = Vector2(760, 323)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank47" type="Sprite2D" parent="."]
+position = Vector2(800, 318)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank48" type="Sprite2D" parent="."]
+position = Vector2(837, 322)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank49" type="Sprite2D" parent="."]
+position = Vector2(837, 322)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank50" type="Sprite2D" parent="."]
+position = Vector2(341, 368)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank51" type="Sprite2D" parent="."]
+position = Vector2(371, 369)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank52" type="Sprite2D" parent="."]
+position = Vector2(405, 370)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank53" type="Sprite2D" parent="."]
+position = Vector2(440, 371)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank54" type="Sprite2D" parent="."]
+position = Vector2(485, 370)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank55" type="Sprite2D" parent="."]
+position = Vector2(524, 369)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank56" type="Sprite2D" parent="."]
+position = Vector2(558, 370)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank57" type="Sprite2D" parent="."]
+position = Vector2(598, 370)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank58" type="Sprite2D" parent="."]
+position = Vector2(632, 372)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank59" type="Sprite2D" parent="."]
+position = Vector2(674, 374)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank60" type="Sprite2D" parent="."]
+position = Vector2(707, 372)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank61" type="Sprite2D" parent="."]
+position = Vector2(745, 373)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank62" type="Sprite2D" parent="."]
+position = Vector2(778, 373)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank63" type="Sprite2D" parent="."]
+position = Vector2(818, 368)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank64" type="Sprite2D" parent="."]
+position = Vector2(855, 372)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank65" type="Sprite2D" parent="."]
+position = Vector2(855, 372)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank66" type="Sprite2D" parent="."]
+position = Vector2(345, 429)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank67" type="Sprite2D" parent="."]
+position = Vector2(375, 430)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank68" type="Sprite2D" parent="."]
+position = Vector2(409, 431)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank69" type="Sprite2D" parent="."]
+position = Vector2(444, 432)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank70" type="Sprite2D" parent="."]
+position = Vector2(489, 431)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank71" type="Sprite2D" parent="."]
+position = Vector2(528, 430)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank72" type="Sprite2D" parent="."]
+position = Vector2(562, 431)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank73" type="Sprite2D" parent="."]
+position = Vector2(602, 431)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank74" type="Sprite2D" parent="."]
+position = Vector2(636, 433)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank75" type="Sprite2D" parent="."]
+position = Vector2(678, 435)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank76" type="Sprite2D" parent="."]
+position = Vector2(711, 433)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank77" type="Sprite2D" parent="."]
+position = Vector2(749, 434)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank78" type="Sprite2D" parent="."]
+position = Vector2(782, 434)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank79" type="Sprite2D" parent="."]
+position = Vector2(822, 429)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank80" type="Sprite2D" parent="."]
+position = Vector2(859, 433)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank81" type="Sprite2D" parent="."]
+position = Vector2(859, 433)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank82" type="Sprite2D" parent="."]
+position = Vector2(345, 429)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank83" type="Sprite2D" parent="."]
+position = Vector2(375, 430)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank84" type="Sprite2D" parent="."]
+position = Vector2(409, 431)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank85" type="Sprite2D" parent="."]
+position = Vector2(444, 432)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank86" type="Sprite2D" parent="."]
+position = Vector2(489, 431)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank87" type="Sprite2D" parent="."]
+position = Vector2(528, 430)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank88" type="Sprite2D" parent="."]
+position = Vector2(562, 431)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank89" type="Sprite2D" parent="."]
+position = Vector2(602, 431)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank90" type="Sprite2D" parent="."]
+position = Vector2(636, 433)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank91" type="Sprite2D" parent="."]
+position = Vector2(678, 435)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank92" type="Sprite2D" parent="."]
+position = Vector2(711, 433)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank93" type="Sprite2D" parent="."]
+position = Vector2(749, 434)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank94" type="Sprite2D" parent="."]
+position = Vector2(782, 434)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank95" type="Sprite2D" parent="."]
+position = Vector2(822, 429)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank96" type="Sprite2D" parent="."]
+position = Vector2(859, 433)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank97" type="Sprite2D" parent="."]
+position = Vector2(859, 433)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank98" type="Sprite2D" parent="."]
+position = Vector2(340, 477)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank99" type="Sprite2D" parent="."]
+position = Vector2(370, 478)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank100" type="Sprite2D" parent="."]
+position = Vector2(404, 479)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank101" type="Sprite2D" parent="."]
+position = Vector2(439, 480)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank102" type="Sprite2D" parent="."]
+position = Vector2(484, 479)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank103" type="Sprite2D" parent="."]
+position = Vector2(523, 478)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank104" type="Sprite2D" parent="."]
+position = Vector2(557, 479)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank105" type="Sprite2D" parent="."]
+position = Vector2(597, 479)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank106" type="Sprite2D" parent="."]
+position = Vector2(631, 481)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank107" type="Sprite2D" parent="."]
+position = Vector2(673, 483)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank108" type="Sprite2D" parent="."]
+position = Vector2(706, 481)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank109" type="Sprite2D" parent="."]
+position = Vector2(744, 482)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank110" type="Sprite2D" parent="."]
+position = Vector2(777, 482)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank111" type="Sprite2D" parent="."]
+position = Vector2(817, 477)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank112" type="Sprite2D" parent="."]
+position = Vector2(854, 481)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank113" type="Sprite2D" parent="."]
+position = Vector2(854, 481)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank114" type="Sprite2D" parent="."]
+position = Vector2(329, 339)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank115" type="Sprite2D" parent="."]
+position = Vector2(359, 340)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank116" type="Sprite2D" parent="."]
+position = Vector2(393, 341)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank117" type="Sprite2D" parent="."]
+position = Vector2(428, 342)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank118" type="Sprite2D" parent="."]
+position = Vector2(473, 341)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank119" type="Sprite2D" parent="."]
+position = Vector2(512, 340)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank120" type="Sprite2D" parent="."]
+position = Vector2(546, 341)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank121" type="Sprite2D" parent="."]
+position = Vector2(586, 341)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank122" type="Sprite2D" parent="."]
+position = Vector2(620, 343)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank123" type="Sprite2D" parent="."]
+position = Vector2(662, 345)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank124" type="Sprite2D" parent="."]
+position = Vector2(695, 343)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank125" type="Sprite2D" parent="."]
+position = Vector2(733, 344)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank126" type="Sprite2D" parent="."]
+position = Vector2(766, 344)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank127" type="Sprite2D" parent="."]
+position = Vector2(806, 339)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank128" type="Sprite2D" parent="."]
+position = Vector2(843, 343)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="Blank129" type="Sprite2D" parent="."]
+position = Vector2(843, 343)
+scale = Vector2(50, 100)
+texture = ExtResource("16_3nweq")
+script = ExtResource("10_dlkv1")
+Total = 129
+
+[node name="RingBox" type="Sprite2D" parent="."]
+position = Vector2(1286, 229)
+rotation = -0.486846
+texture = ExtResource("19_k3r1w")
+script = ExtResource("20_nqhmn")
+ScenePath = "res://Scenes/ring.tscn"
+
+[connection signal="activate_ring" from="." to="RingBox" method="activate_ring"]

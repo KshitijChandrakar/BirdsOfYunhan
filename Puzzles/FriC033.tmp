@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3mncu8u4nv43"]
+
+[ext_resource type="Texture2D" uid="uid://lgypxdd1d701" path="res://Resources/UImenus/Games/kitchencabop.png" id="1_nnt8y"]
+[ext_resource type="Script" path="res://GlobalScripts/ButtonForPuzzleVisible.gd" id="2_fl3wk"]
+[ext_resource type="Texture2D" uid="uid://byyltp745qj83" path="res://Resources/UImenus/Games/Open Fridge.png" id="3_60rk1"]
+
+[node name="Kitche" type="Node2D"]
+
+[node name="Kitchencabop" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_nnt8y")
+centered = false
+script = ExtResource("2_fl3wk")
+
+[node name="OpenFridge" type="Sprite2D" parent="Kitchencabop"]
+visible = false
+texture = ExtResource("3_60rk1")
+centered = false

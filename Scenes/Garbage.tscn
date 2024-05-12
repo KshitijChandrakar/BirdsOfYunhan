@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://bmqfp3y76qhmk"]
+
+[ext_resource type="Script" path="res://GlobalScripts/ChangeSceneOnSignal.gd" id="1_8arld"]
+[ext_resource type="Texture2D" uid="uid://u15qtra1lryh" path="res://Resources/bgs/GarbageTruck.png" id="1_8ijue"]
+[ext_resource type="Texture2D" uid="uid://bgohuk8umplrn" path="res://Resources/bgs/Dots/dots puzzle.png" id="3_q4ax4"]
+[ext_resource type="Script" path="res://GlobalScripts/Wires.gd" id="4_xgigy"]
+[ext_resource type="Texture2D" uid="uid://xq6b6enwep3m" path="res://Resources/bgs/Dots/flower.png" id="5_mpfcu"]
+[ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/Wires2.gd" id="6_lkkcw"]
+[ext_resource type="Texture2D" uid="uid://dtgtwrqk4yck1" path="res://Resources/bgs/Dots/heart.png" id="7_b4b48"]
+
+[node name="Garbage" type="Node2D"]
+
+[node name="GarbageTruck" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_8ijue")
+centered = false
+script = ExtResource("1_8arld")
+ScenePath = "res://Scenes/Gaming Date.tscn"
+
+[node name="MainPlayer" type="Sprite2D" parent="."]
+position = Vector2(274, 472)
+scale = Vector2(0.6, 0.8)
+texture = ExtResource("3_q4ax4")
+centered = false
+script = ExtResource("4_xgigy")
+
+[node name="Icon2" type="Sprite2D" parent="MainPlayer"]
+position = Vector2(182.423, 50.8564)
+scale = Vector2(2, 2)
+texture = ExtResource("5_mpfcu")
+script = ExtResource("6_lkkcw")
+id = 23
+
+[node name="Icon3" type="Sprite2D" parent="MainPlayer"]
+position = Vector2(566.125, 103.643)
+scale = Vector2(3.20695, 1.15601)
+texture = ExtResource("5_mpfcu")
+script = ExtResource("6_lkkcw")
+id = 23
+
+[node name="Icon5" type="Sprite2D" parent="MainPlayer"]
+position = Vector2(342.442, 125.916)
+scale = Vector2(2, 2)
+texture = ExtResource("7_b4b48")
+script = ExtResource("6_lkkcw")
+id = 25
+
+[node name="Icon6" type="Sprite2D" parent="MainPlayer"]
+position = Vector2(775.086, 60.6639)
+scale = Vector2(4.57245, 1.48045)
+texture = ExtResource("7_b4b48")
+script = ExtResource("6_lkkcw")
+id = 25
+
+[connection signal="finished" from="MainPlayer" to="GarbageTruck" method="_on_main_player_finished"]

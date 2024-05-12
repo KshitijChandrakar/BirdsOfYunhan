@@ -1,0 +1,246 @@
+[gd_scene load_steps=17 format=3 uid="uid://c3mncu8u4nv43"]
+
+[ext_resource type="Script" path="res://GlobalScripts/Fridge.gd" id="1_7d7ug"]
+[ext_resource type="Texture2D" uid="uid://lgypxdd1d701" path="res://Resources/UImenus/Games/kitchencabop.png" id="1_nnt8y"]
+[ext_resource type="Texture2D" uid="uid://c7t03qy0n650o" path="res://Resources/UImenus/Games/Fridge Objects/Fridge.png" id="2_bl3v2"]
+[ext_resource type="Texture2D" uid="uid://byyltp745qj83" path="res://Resources/UImenus/Games/Open Fridge.png" id="3_60rk1"]
+[ext_resource type="Texture2D" uid="uid://y1v2i500wk32" path="res://Resources/UImenus/Games/Fridge Objects/Layer 8.png" id="5_r3cpk"]
+[ext_resource type="Texture2D" uid="uid://b7ukr5y7prc8p" path="res://Resources/UImenus/Games/Fridge Objects/Mat.png" id="5_wvn0n"]
+[ext_resource type="Texture2D" uid="uid://cqfsy001di7sj" path="res://Resources/UImenus/Games/Fridge Objects/Layer 9.png" id="6_62g4c"]
+[ext_resource type="Texture2D" uid="uid://dbsotfixye216" path="res://Resources/UImenus/Games/Fridge Objects/Layer 14.png" id="7_rqiqp"]
+[ext_resource type="Texture2D" uid="uid://bvdrhw265tqwv" path="res://Resources/UImenus/Games/Fridge Objects/Layer 7 copy 3-1.png" id="8_4lxr1"]
+[ext_resource type="Texture2D" uid="uid://d1rs6ompp7vwx" path="res://Resources/UImenus/Games/Fridge Objects/Layer 10 copy.png" id="9_rp5lm"]
+[ext_resource type="Script" path="res://Puzzles/DraggyDroppy/Thingy.gd" id="9_swgfp"]
+[ext_resource type="Texture2D" uid="uid://b7que0f7e7kaj" path="res://Resources/UImenus/Games/Fridge Objects/Layer 6 copy.png" id="10_veqe7"]
+[ext_resource type="Texture2D" uid="uid://3278v6qyvf8t" path="res://Resources/UImenus/Games/Fridge Objects/Layer 13 copy.png" id="11_lsrgv"]
+[ext_resource type="Texture2D" uid="uid://bw44p03nemirg" path="res://Resources/UImenus/Games/Fridge Objects/Layer 15 copy.png" id="12_cok4r"]
+[ext_resource type="Texture2D" uid="uid://emn1dd33vhim" path="res://Resources/UImenus/Games/Fridge Objects/Layer 11 copy.png" id="13_s3py7"]
+[ext_resource type="Texture2D" uid="uid://cx0wyefpw584i" path="res://Resources/UImenus/Blank.png" id="14_ccgsh"]
+
+[node name="Kitche" type="Node2D"]
+script = ExtResource("1_7d7ug")
+Total = 7
+ScenePath = "res://Scenes/Kitchen.tscn"
+
+[node name="Background" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_nnt8y")
+centered = false
+
+[node name="Fridge" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_bl3v2")
+centered = false
+
+[node name="OpenFridge" type="Sprite2D" parent="Fridge"]
+texture = ExtResource("3_60rk1")
+centered = false
+
+[node name="Rotten Sandwich" type="Sprite2D" parent="Fridge/OpenFridge"]
+position = Vector2(66.6667, 986.667)
+texture = ExtResource("7_rqiqp")
+
+[node name="Potato" type="Sprite2D" parent="Fridge/OpenFridge"]
+position = Vector2(573.333, 960)
+texture = ExtResource("5_r3cpk")
+
+[node name="Jam" type="Sprite2D" parent="Fridge/OpenFridge"]
+position = Vector2(40, 680)
+texture = ExtResource("6_62g4c")
+
+[node name="Mat" type="Sprite2D" parent="."]
+position = Vector2(856, 520)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_wvn0n")
+
+[node name="Object1" type="Sprite2D" parent="."]
+position = Vector2(840, 536)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("8_4lxr1")
+offset = Vector2(0, 40)
+script = ExtResource("9_swgfp")
+draggable = true
+
+[node name="Object2" type="Sprite2D" parent="."]
+position = Vector2(824, 568)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("8_4lxr1")
+offset = Vector2(0, 40)
+script = ExtResource("9_swgfp")
+draggable = true
+
+[node name="Object3" type="Sprite2D" parent="."]
+position = Vector2(768, 448)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("9_rp5lm")
+offset = Vector2(0, 40)
+script = ExtResource("9_swgfp")
+draggable = true
+
+[node name="Object4" type="Sprite2D" parent="."]
+position = Vector2(640, 552)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_veqe7")
+offset = Vector2(0, -45)
+script = ExtResource("9_swgfp")
+draggable = true
+
+[node name="Object5" type="Sprite2D" parent="."]
+position = Vector2(920, 464)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("11_lsrgv")
+offset = Vector2(0, 20)
+script = ExtResource("9_swgfp")
+draggable = true
+
+[node name="Object6" type="Sprite2D" parent="."]
+position = Vector2(984, 552)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("13_s3py7")
+script = ExtResource("9_swgfp")
+draggable = true
+
+[node name="Object7" type="Sprite2D" parent="."]
+position = Vector2(704, 515)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("12_cok4r")
+script = ExtResource("9_swgfp")
+draggable = true
+
+[node name="Blank1" type="Sprite2D" parent="."]
+position = Vector2(32, 168)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank2" type="Sprite2D" parent="."]
+position = Vector2(96, 168)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank3" type="Sprite2D" parent="."]
+position = Vector2(160, 168)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank4" type="Sprite2D" parent="."]
+position = Vector2(224, 168)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank5" type="Sprite2D" parent="."]
+position = Vector2(288, 168)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank6" type="Sprite2D" parent="."]
+position = Vector2(352, 168)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank7" type="Sprite2D" parent="."]
+position = Vector2(33, 74)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank8" type="Sprite2D" parent="."]
+position = Vector2(97, 74)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank9" type="Sprite2D" parent="."]
+position = Vector2(161, 74)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank10" type="Sprite2D" parent="."]
+position = Vector2(225, 74)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank11" type="Sprite2D" parent="."]
+position = Vector2(289, 74)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank12" type="Sprite2D" parent="."]
+position = Vector2(353, 74)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank13" type="Sprite2D" parent="."]
+position = Vector2(25, 386)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank14" type="Sprite2D" parent="."]
+position = Vector2(89, 386)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank15" type="Sprite2D" parent="."]
+position = Vector2(153, 386)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank16" type="Sprite2D" parent="."]
+position = Vector2(217, 386)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank17" type="Sprite2D" parent="."]
+position = Vector2(281, 386)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank18" type="Sprite2D" parent="."]
+position = Vector2(345, 386)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank19" type="Sprite2D" parent="."]
+position = Vector2(17595, 38986)
+scale = Vector2(2500, 10000)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank20" type="Sprite2D" parent="."]
+position = Vector2(91, 557)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank21" type="Sprite2D" parent="."]
+position = Vector2(155, 557)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank22" type="Sprite2D" parent="."]
+position = Vector2(219, 557)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")
+
+[node name="Blank23" type="Sprite2D" parent="."]
+position = Vector2(283, 557)
+scale = Vector2(50, 100)
+texture = ExtResource("14_ccgsh")
+script = ExtResource("9_swgfp")

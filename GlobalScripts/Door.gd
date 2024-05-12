@@ -1,8 +1,9 @@
 extends Sprite2D
 @export var ScenePath = ""
 @export var click = true
-var arrow = load("res://Resources/cursors/CursorDefault.png")
-var beam = load("res://Resources/cursors/Cursor2.png")
+@export var mode = 0
+var arrow = load("res://Resources/cursors/cursornorm-01-01.png")
+var beam = load("res://Resources/cursors/cursorshine-01-01.png")
 func _ready():
 	# Changes only the arrow shape of the cursor.
 	# This is similar to changing it in the project settings.
@@ -24,3 +25,15 @@ func _input(event):
 				if ScenePath != "":
 					get_tree().change_scene_to_file(ScenePath)
 
+
+
+func _on_garbage_cannot_closed():
+	print("Garbage cannot Signal recieved")
+	visible = true
+	pass # Replace with function body.
+
+
+func MakeInvis(x):
+	if x:
+		visible = false
+	pass # Replace with function body.

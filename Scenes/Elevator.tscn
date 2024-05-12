@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dooyftild0qcb"]
+[gd_scene load_steps=7 format=3 uid="uid://dooyftild0qcb"]
 
 [ext_resource type="Texture2D" uid="uid://c3ixcg5hrr36w" path="res://Resources/bgs/elevator.png" id="1_177si"]
-[ext_resource type="Texture2D" uid="uid://cbbmu8gsg02n7" path="res://Resources/Arrow.png" id="2_2ka60"]
+[ext_resource type="Texture2D" uid="uid://p42ov0x4lr2p" path="res://Resources/Arrow.png" id="2_2ka60"]
 [ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="3_0wxas"]
+[ext_resource type="Texture2D" uid="uid://slmv47cshbir" path="res://Main Player.png" id="4_0xp3u"]
+[ext_resource type="Script" path="res://Scenes/Elevator2.gd" id="4_88oss"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_oy7rm"]
 
@@ -14,15 +16,20 @@ texture = ExtResource("1_177si")
 centered = false
 
 [node name="To Lobby" type="Sprite2D" parent="."]
-position = Vector2(56, 328)
+position = Vector2(64, 312)
 rotation = 3.14159
-scale = Vector2(0.373, 1)
+scale = Vector2(0.559376, 0.499999)
 texture = ExtResource("2_2ka60")
 script = ExtResource("3_0wxas")
 ScenePath = "res://Scenes/Lobby.tscn"
 
 [node name="Elevator2" type="Sprite2D" parent="."]
-position = Vector2(426.258, 47.3629)
-scale = Vector2(305.234, 381.162)
+position = Vector2(393, 21)
+scale = Vector2(431, 408)
 texture = SubResource("ImageTexture_oy7rm")
-script = ExtResource("3_0wxas")
+script = ExtResource("4_88oss")
+ScenePath = "res://Scenes/elevator_2.tscn"
+
+[node name="MainPlayer" type="Sprite2D" parent="."]
+position = Vector2(274, 429)
+texture = ExtResource("4_0xp3u")

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Puzzles/Wire Puzzle/pin_code.gd" id="1_px0x8"]
 [ext_resource type="Texture2D" uid="uid://blstef155raby" path="res://Puzzles/Wire Puzzle/answer_paper.png" id="2_hc4xv"]
-[ext_resource type="Script" path="res://Sprite2D.gd" id="3_1w6fk"]
+[ext_resource type="Script" path="res://Puzzles/Wire Puzzle/Sprite2D.gd" id="3_1w6fk"]
 
 [sub_resource type="Gradient" id="Gradient_830qv"]
 offsets = PackedFloat32Array(0.448052)

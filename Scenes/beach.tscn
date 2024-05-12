@@ -1,0 +1,92 @@
+[gd_scene load_steps=16 format=3 uid="uid://ccfbok7nyky1a"]
+
+[ext_resource type="Texture2D" uid="uid://b8ugu46en3txo" path="res://Resources/bgs/Beach.png" id="1_6qxks"]
+[ext_resource type="Script" path="res://GlobalScripts/ChangeSceneOnSignal.gd" id="2_qwat5"]
+[ext_resource type="Texture2D" uid="uid://bgohuk8umplrn" path="res://Resources/bgs/Dots/dots puzzle.png" id="3_bmlvq"]
+[ext_resource type="Texture2D" uid="uid://dt5ab4kty7jyf" path="res://Resources/bgs/2BestiesInARoomTheyMightKiss.png" id="3_ph2t5"]
+[ext_resource type="Script" path="res://GlobalScripts/Wires.gd" id="4_1lw68"]
+[ext_resource type="Script" path="res://Scenes/BG2.gd" id="4_2lfvg"]
+[ext_resource type="Texture2D" uid="uid://xq6b6enwep3m" path="res://Resources/bgs/Dots/flower.png" id="5_h0bsd"]
+[ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/Wires2.gd" id="6_2p68k"]
+[ext_resource type="Texture2D" uid="uid://dtgtwrqk4yck1" path="res://Resources/bgs/Dots/heart.png" id="7_ee7lu"]
+[ext_resource type="Script" path="res://GlobalScripts/ButtonForPuzzleVisible.gd" id="7_omr26"]
+[ext_resource type="Texture2D" uid="uid://bn6jxh6ltoba3" path="res://Resources/bgs/Clams.png" id="9_athgc"]
+[ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="10_ftdks"]
+[ext_resource type="Texture2D" uid="uid://lubu38qqbi2p" path="res://Resources/bgs/Besties.png" id="11_038ap"]
+[ext_resource type="Texture2D" uid="uid://cds4iexop1gcm" path="res://Resources/bgs/BestiesKissing.png" id="13_bn8nb"]
+[ext_resource type="Script" path="res://Scenes/BG3.gd" id="15_cb7o7"]
+
+[node name="Beach" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_6qxks")
+centered = false
+script = ExtResource("2_qwat5")
+
+[node name="BG2" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_ph2t5")
+centered = false
+script = ExtResource("4_2lfvg")
+
+[node name="Clams" type="Sprite2D" parent="."]
+position = Vector2(1009, 523)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("9_athgc")
+script = ExtResource("10_ftdks")
+ScenePath = "res://Puzzles/BumbleThing/bumble.tscn"
+
+[node name="Besties" type="Sprite2D" parent="."]
+position = Vector2(265, 334)
+scale = Vector2(0.69, 0.69)
+texture = ExtResource("11_038ap")
+script = ExtResource("7_omr26")
+
+[node name="MainPlayer" type="Sprite2D" parent="Besties"]
+visible = false
+position = Vector2(13.0435, 200)
+scale = Vector2(0.869565, 1.15942)
+texture = ExtResource("3_bmlvq")
+centered = false
+script = ExtResource("4_1lw68")
+
+[node name="Icon2" type="Sprite2D" parent="Besties/MainPlayer"]
+position = Vector2(182.423, 50.8564)
+scale = Vector2(2, 2)
+texture = ExtResource("5_h0bsd")
+script = ExtResource("6_2p68k")
+id = 23
+
+[node name="Icon3" type="Sprite2D" parent="Besties/MainPlayer"]
+position = Vector2(566.125, 103.643)
+scale = Vector2(3.20695, 1.15601)
+texture = ExtResource("5_h0bsd")
+script = ExtResource("6_2p68k")
+id = 23
+
+[node name="Icon5" type="Sprite2D" parent="Besties/MainPlayer"]
+position = Vector2(342.442, 125.916)
+scale = Vector2(2, 2)
+texture = ExtResource("7_ee7lu")
+script = ExtResource("6_2p68k")
+id = 25
+
+[node name="Icon6" type="Sprite2D" parent="Besties/MainPlayer"]
+position = Vector2(775.086, 60.6639)
+scale = Vector2(4.57245, 1.48045)
+texture = ExtResource("7_ee7lu")
+script = ExtResource("6_2p68k")
+id = 25
+
+[node name="BG3" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("13_bn8nb")
+centered = false
+script = ExtResource("15_cb7o7")
+
+[connection signal="finished" from="Besties/MainPlayer" to="BG2" method="MakeInvis"]
+[connection signal="finished" from="Besties/MainPlayer" to="Clams" method="MakeInvis"]
+[connection signal="finished" from="Besties/MainPlayer" to="Besties" method="MakeInvis"]
+[connection signal="finished" from="Besties/MainPlayer" to="BG3" method="_on_main_player_finished"]

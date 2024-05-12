@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://btjffyptb8ylr"]
+
+[ext_resource type="Texture2D" uid="uid://2564t43p5kxp" path="res://icon.svg" id="2_uks3q"]
+[ext_resource type="Script" path="res://GlobalScripts/Wires.gd" id="3_2c1cc"]
+
+[node name="Dots Game" type="Node2D"]
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(72.75, 87.25)
+scale = Vector2(0.847656, 0.707031)
+texture = ExtResource("2_uks3q")
+script = ExtResource("3_2c1cc")
+id = 21
+
+[node name="Icon4" type="Sprite2D" parent="."]
+position = Vector2(244.75, 129.25)
+scale = Vector2(1.03516, 0.519531)
+texture = ExtResource("2_uks3q")
+script = ExtResource("3_2c1cc")

@@ -10,7 +10,7 @@ position = Vector2(301, 300)
 scale = Vector2(2.70313, 2.8125)
 texture = ExtResource("1_86uud")
 script = ExtResource("2_ajaec")
-ScenePath = "res://Scenes/LivingRoom1.tscn"
+ScenePath = "res://Puzzles/Fridge.tscn"
 
 [node name="Icon2" type="Sprite2D" parent="."]
 position = Vector2(795, 291)

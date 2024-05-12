@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cli0e0b45ucj7"]
+
+[ext_resource type="Texture2D" uid="uid://b13li5rht7m3w" path="res://Resources/bgs/ring.png" id="1_7yge3"]
+
+[node name="Ring" type="Node2D"]
+
+[node name="Ring" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_7yge3")
+centered = false

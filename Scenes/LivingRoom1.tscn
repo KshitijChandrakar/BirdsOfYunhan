@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://57dewicgnry"]
 
 [ext_resource type="Texture2D" uid="uid://nkxec6mnywpc" path="res://Resources/bgs/lv1.png" id="1_om438"]
-[ext_resource type="Texture2D" uid="uid://cbbmu8gsg02n7" path="res://Resources/Arrow.png" id="2_1nr3e"]
+[ext_resource type="Texture2D" uid="uid://p42ov0x4lr2p" path="res://Resources/Arrow.png" id="2_1nr3e"]
 [ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="3_qt2uq"]
 
 [node name="LivingRoom1" type="Node2D"]
