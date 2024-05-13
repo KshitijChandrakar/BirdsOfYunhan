@@ -8,7 +8,7 @@ var beam = load("res://Resources/cursors/cursorshine-01-01.png")
 func _process(delta):
 		if clams and dots:
 			visible = false
-		if get_rect().has_point(to_local(get_global_mouse_position())):
+		if get_rect().has_point(to_local(get_global_mouse_position())) and visible:
 			Input.set_custom_mouse_cursor(beam, Input.CURSOR_IBEAM)
 
 func _input(event):

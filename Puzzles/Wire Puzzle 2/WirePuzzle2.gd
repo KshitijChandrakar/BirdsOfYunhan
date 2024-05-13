@@ -10,6 +10,7 @@ signal finished
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	# Create a new Line2D node
+	print("Dots ready")
 	LineMain = Line2D.new()
 	add_child(LineMain)
 	LineMain.add_point(start.position)
@@ -46,6 +47,7 @@ func _process(delta):
 			queue_redraw()
 			
 func onDotPosition(Pos):
+	print("called")
 	for i in dots:
 		if i.get_rect().has_point(i.to_local(get_global_mouse_position())):
 			print("Added point ", i.position, " To Line")

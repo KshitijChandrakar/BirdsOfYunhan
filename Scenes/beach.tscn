@@ -49,6 +49,11 @@ visible = false
 position = Vector2(468.63, 284.703)
 texture = ExtResource("3_bmlvq")
 script = ExtResource("16_h7p2i")
+Total_Num_Of_Dots = 10
+Base_String = "Icon"
+
+[node name="Door" type="AudioStreamPlayer" parent="Besties/Bg"]
+stream = ExtResource("17_4dgm4")
 
 [node name="Icon1" type="Sprite2D" parent="Besties/Bg"]
 position = Vector2(-111.955, -30.7799)
@@ -109,9 +114,6 @@ texture = ExtResource("5_h0bsd")
 position = Vector2(212.683, -30.7799)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_ee7lu")
-
-[node name="Door" type="AudioStreamPlayer" parent="Besties/Bg"]
-stream = ExtResource("17_4dgm4")
 
 [node name="BG3" type="Sprite2D" parent="."]
 visible = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://c6m4gy0pdm1kq"]
+[gd_scene load_steps=35 format=3 uid="uid://c6m4gy0pdm1kq"]
 
 [ext_resource type="Texture2D" uid="uid://ch7nenlmnexr2" path="res://Resources/bgs/lv2.png" id="1_svbio"]
 [ext_resource type="Texture2D" uid="uid://p42ov0x4lr2p" path="res://Resources/Arrow.png" id="2_2odnk"]
@@ -32,7 +32,6 @@
 [ext_resource type="Texture2D" uid="uid://d125l3ikjhbf8" path="res://Resources/Magpie/Magpie 2/Magpie 01_00025.png" id="30_uv80d"]
 [ext_resource type="Texture2D" uid="uid://dbu3l7y2l6ecr" path="res://Resources/Magpie/Magpie 2/Magpie 01_00026.png" id="31_okifd"]
 [ext_resource type="Texture2D" uid="uid://csvsp3awido1h" path="res://Resources/Magpie/Magpie 2/Magpie 01_00027.png" id="32_5evol"]
-[ext_resource type="Script" path="res://GlobalScripts/MainPlayer.gd" id="33_3amq5"]
 [ext_resource type="AudioStream" uid="uid://dfen8dx8i3svt" path="res://Resources/Sounds/arrow.mp3" id="34_xqlyh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ajiru"]
@@ -163,7 +162,6 @@ scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_ajiru")
 animation = &"Standing Still"
 offset = Vector2(175, 0)
-script = ExtResource("33_3amq5")
 
 [node name="Door" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("34_xqlyh")
