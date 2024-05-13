@@ -182,7 +182,7 @@ script = ExtResource("6_byhwe")
 
 [node name="Main Emo Kid" type="AnimatedSprite2D" parent="."]
 z_index = 2
-position = Vector2(870, 294)
+position = Vector2(423, 286)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_ab4u6")
 animation = &"Standing Still"

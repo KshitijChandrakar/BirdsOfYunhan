@@ -25,7 +25,7 @@ func _input(event):
 			if get_rect().has_point(to_local(event.position)):
 				#add_child(scene)
 				if ScenePath != "" and visible:
-					$"../Door".play(0)
+					$"../Door".play()
 					get_tree().change_scene_to_file(ScenePath)
 
 

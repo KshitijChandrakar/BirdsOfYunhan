@@ -29,5 +29,8 @@ centered = false
 script = ExtResource("5_bck6e")
 ScenePath = "res://Settings Scenes/Credits.tscn"
 
+[node name="Door" type="AudioStreamPlayer" parent="FallenPass"]
+stream = ExtResource("6_u6fq7")
+
 [node name="Door" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_u6fq7")

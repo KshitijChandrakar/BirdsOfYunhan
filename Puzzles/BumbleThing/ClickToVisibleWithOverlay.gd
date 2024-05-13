@@ -13,9 +13,10 @@ func _input(event):
 	if get_parent().visible:
 		if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 			if get_rect().has_point(to_local(event.position)):
+				$"../Door".play()
+				
 				if not Correct:
 					if $"../Cards".frame >= Total -1:
-						
 						selected.emit(-1)
 					else:
 						$"../Cards".set_frame_and_progress($"../Cards".frame + 1, 0)

@@ -12,5 +12,5 @@ func _ready():
 func _process(delta):
 	
 	if get_playback_position() >= stream.get_length():
-		play(0)
+		play()
 	pass

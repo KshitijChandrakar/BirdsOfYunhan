@@ -20,12 +20,14 @@ func _process(delta):
 			if not click:
 				if ScenePath != "":
 					$"../Bumble".visible = true
+					$"../Door".play()
 
 func _input(event):
 	if event is InputEventMouseButton: 
 		if event.pressed and event.button_index == MOUSE_BUTTON_LEFT and click:
 			if get_rect().has_point(to_local(event.position)):
 				$"../Bumble".visible = true
+				$"../Door".play()
 
 func MakeInvis(x):	
 	dots = x

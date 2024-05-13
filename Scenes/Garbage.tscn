@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bmqfp3y76qhmk"]
+[gd_scene load_steps=11 format=3 uid="uid://bmqfp3y76qhmk"]
 
 [ext_resource type="Script" path="res://GlobalScripts/ChangeSceneOnSignal.gd" id="1_8arld"]
 [ext_resource type="Texture2D" uid="uid://u15qtra1lryh" path="res://Resources/bgs/GarbageTruck.png" id="1_8ijue"]
@@ -8,6 +8,8 @@
 [ext_resource type="AudioStream" uid="uid://da8v1otptalg1" path="res://Resources/Sounds/objects.mp3" id="8_2ch0k"]
 [ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/WirePuzzle2.gd" id="8_j4fah"]
 [ext_resource type="Texture2D" uid="uid://jgvemkib11fk" path="res://Resources/bgs/Dots/Dot.png" id="9_2jdsn"]
+[ext_resource type="AudioStream" uid="uid://jdds30vspik1" path="res://Resources/Sounds/521296__sonnyestufa__taiwan-garbage-truck-song-yuanlin-city-soundscape-at-3-pm.wav" id="9_ic1db"]
+[ext_resource type="Script" path="res://GlobalScripts/Loop.gd" id="10_qgqit"]
 
 [node name="Garbage" type="Node2D"]
 
@@ -87,5 +89,10 @@ stream = ExtResource("8_2ch0k")
 position = Vector2(212.683, -30.7799)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_b4b48")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_ic1db")
+autoplay = true
+script = ExtResource("10_qgqit")
 
 [connection signal="finished" from="Bg" to="GarbageTruck" method="_on_bg_finished"]

@@ -15,8 +15,8 @@ func _input(event):
 			#showPuzzle.emit()
 
 			for i in get_child_count():
-				
-				get_child(i).visible = not get_child(i).visible
+				if get_child(i).has_method("show"):
+					get_child(i).visible = not get_child(i).visible
 			#get_node(nodeName).visible = not get_node(nodeName).visible
 			#$nodeName.show()
 
