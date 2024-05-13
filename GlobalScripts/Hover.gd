@@ -1,8 +1,8 @@
 extends Sprite2D
 @export var ImagePath = ""
 @export var click = false
-var arrow = load("res://Resources/cursors/CursorDefault.png")
-var beam = load("res://Resources/cursors/Cursor2.png")
+var arrow = load("res://Resources/cursors/cursornorm-01-01.png")
+var beam = load("res://Resources/cursors/cursorshine-01-01.png")
 func _ready():
 	# Changes only the arrow shape of the cursor.
 	# This is similar to changing it in the project settings.

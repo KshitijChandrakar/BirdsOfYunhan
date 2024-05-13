@@ -4,7 +4,7 @@ extends Node2D
 func _ready():
 	print("Entered Elevator waiting ", time, " Seconds")
 	await get_tree().create_timer(time, true).timeout
-	get_tree().change_scene_to_file("res://Scenes/ring.tscn")
+	get_tree().change_scene_to_file("res://Puzzles/Packing Game/packing.tscn")
 	pass # Replace with function body.
 
 
