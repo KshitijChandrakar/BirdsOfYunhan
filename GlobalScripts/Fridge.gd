@@ -3,7 +3,7 @@ extends Node
 @export var Total = 0
 var allPlaced = true
 @export var baseStr = "Object"
-@onready var Objects = [$Object1,$Object2,$Object3,$Object4,$Object5,$Object6,$Object7]
+@onready var Objects = [$Object1]
 @export var ScenePath = ""
 var iterated = []
 # Called when the node enters the scene tree for the first time.

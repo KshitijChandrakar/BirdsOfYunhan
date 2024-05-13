@@ -10,6 +10,7 @@ var releasedPos
 @export var Base_String = "../Blank"
 @export var Total = 23
 var destination = []
+var dest
 func _ready():
 	originalPos = position
 	
@@ -18,30 +19,30 @@ func _ready():
 			var curStr = Base_String + str(i)
 			destination.append(get_node(curStr))
 func _process(_delta):
-	pass
-	#print($"../Shelf/MainPlayer".get_rect(), get_rect())
-	
-func _input(event):
-	pass
-	#offset = Vector2(0,0)
 	if not placed and draggable:
-		if event is InputEventMouseButton:
-			if event.button_index == MOUSE_BUTTON_LEFT:
+		if Input.is_action_pressed("ui_leftMouseClick"):
+			if get_rect().has_point(to_local(get_global_mouse_position())) or dragging:
+				position = get_global_mouse_position()
+				dest = checkDest(position)
+				dragging = true
 			
-				if event.pressed and get_rect().has_point(to_local(event.position)):
-					dragging = true
-					#offset = global_position - get_global_mouse_position()
-				elif dragging:
+			
+		elif Input.is_action_just_released("ui_leftMouseClick"):
+			dragging = false
+		#else:
+			if dest != null:
+				#offset = 
+				position = get_global_mouse_position()
+				placed = true
 				
-					dragging = false
+			else:
+				position = originalPos
 		
-		if dragging:
-			
-			global_position = get_global_mouse_position()
+		pass
+	#print($"../Shelf/MainPlayer".get_rect(), get_rect())
+		
+func checkDest(pos):
 			for i in range(len(destination)):
-				if destination[i].get_indexed("id") == id and destination[i].get_rect().has_point(destination[i].to_local(event.position)) and destination[i].get_indexed("placed") == false:
-					position = destination[i].get_indexed("position")
-					placed = true
-					destination[i].placed = true
-					
-		
+				if destination[i].get_indexed("id") == id and destination[i].get_rect().has_point(destination[i].to_local(pos)) :
+					print("Found Dest ", destination[i].position, "With Pos as ", pos)
+					return destination[i]
