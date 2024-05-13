@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://dntvl2v4xubom"]
+[gd_scene load_steps=36 format=3 uid="uid://dntvl2v4xubom"]
 
 [ext_resource type="Texture2D" uid="uid://cywd2l6ap6wno" path="res://Resources/bgs/lobby.png" id="1_skdv4"]
 [ext_resource type="Texture2D" uid="uid://p42ov0x4lr2p" path="res://Resources/Arrow.png" id="2_xdfs1"]
@@ -33,6 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://dbu3l7y2l6ecr" path="res://Resources/Magpie/Magpie 2/Magpie 01_00026.png" id="31_aqesa"]
 [ext_resource type="Texture2D" uid="uid://csvsp3awido1h" path="res://Resources/Magpie/Magpie 2/Magpie 01_00027.png" id="32_3qmmi"]
 [ext_resource type="Script" path="res://GlobalScripts/MainPlayer.gd" id="33_2uwui"]
+[ext_resource type="AudioStream" uid="uid://dfen8dx8i3svt" path="res://Resources/Sounds/arrow.mp3" id="34_mkrv7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ot5cl"]
 animations = [{
@@ -163,3 +164,6 @@ sprite_frames = SubResource("SpriteFrames_ot5cl")
 animation = &"Standing Still"
 offset = Vector2(175, 0)
 script = ExtResource("33_2uwui")
+
+[node name="Door" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("34_mkrv7")

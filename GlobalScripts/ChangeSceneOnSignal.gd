@@ -11,7 +11,9 @@ func _process(delta):
 	pass
 
 
-func _on_main_player_finished(Done):
+
+func _on_bg_finished(Done):
 	if Done:
 		get_tree().change_scene_to_file(ScenePath)
+
 	pass # Replace with function body.

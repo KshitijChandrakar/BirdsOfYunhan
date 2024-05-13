@@ -1,25 +1,24 @@
 [gd_scene load_steps=18 format=3 uid="uid://ccfbok7nyky1a"]
 
 [ext_resource type="Texture2D" uid="uid://b8ugu46en3txo" path="res://Resources/bgs/Beach.png" id="1_6qxks"]
-[ext_resource type="Script" path="res://Scenes/beach.gd" id="1_fonm1"]
 [ext_resource type="Script" path="res://GlobalScripts/ChangeSceneOnSignal.gd" id="2_qwat5"]
 [ext_resource type="Texture2D" uid="uid://bgohuk8umplrn" path="res://Resources/bgs/Dots/dots puzzle.png" id="3_bmlvq"]
 [ext_resource type="Texture2D" uid="uid://dt5ab4kty7jyf" path="res://Resources/bgs/2BestiesInARoomTheyMightKiss.png" id="3_ph2t5"]
-[ext_resource type="Script" path="res://GlobalScripts/Wires.gd" id="4_1lw68"]
 [ext_resource type="Script" path="res://Scenes/BG2.gd" id="4_2lfvg"]
 [ext_resource type="Texture2D" uid="uid://xq6b6enwep3m" path="res://Resources/bgs/Dots/flower.png" id="5_h0bsd"]
-[ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/Wires2.gd" id="6_2p68k"]
 [ext_resource type="Script" path="res://Scenes/Clams.gd" id="6_dxjps"]
 [ext_resource type="Texture2D" uid="uid://dtgtwrqk4yck1" path="res://Resources/bgs/Dots/heart.png" id="7_ee7lu"]
 [ext_resource type="Script" path="res://Scenes/Besties.gd" id="8_n7jgr"]
 [ext_resource type="Texture2D" uid="uid://bn6jxh6ltoba3" path="res://Resources/bgs/Clams.png" id="9_athgc"]
 [ext_resource type="Texture2D" uid="uid://lubu38qqbi2p" path="res://Resources/bgs/Besties.png" id="11_038ap"]
+[ext_resource type="Texture2D" uid="uid://jgvemkib11fk" path="res://Resources/bgs/Dots/Dot.png" id="12_o5yt6"]
 [ext_resource type="Texture2D" uid="uid://cds4iexop1gcm" path="res://Resources/bgs/BestiesKissing.png" id="13_bn8nb"]
 [ext_resource type="Script" path="res://Scenes/BG3.gd" id="15_cb7o7"]
+[ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/WirePuzzle2.gd" id="16_h7p2i"]
 [ext_resource type="PackedScene" uid="uid://13apbim5sxqk" path="res://Puzzles/BumbleThing/bumble.tscn" id="16_qfaaf"]
+[ext_resource type="AudioStream" uid="uid://byx0nqhyw1usw" path="res://Resources/Sounds/UIsound.mp3" id="17_4dgm4"]
 
 [node name="Beach" type="Node2D"]
-script = ExtResource("1_fonm1")
 
 [node name="BG" type="Sprite2D" parent="."]
 scale = Vector2(0.6, 0.6)
@@ -45,41 +44,74 @@ scale = Vector2(0.69, 0.69)
 texture = ExtResource("11_038ap")
 script = ExtResource("8_n7jgr")
 
-[node name="MainPlayer" type="Sprite2D" parent="Besties"]
+[node name="Bg" type="Sprite2D" parent="Besties"]
 visible = false
-position = Vector2(13.0435, 200)
-scale = Vector2(0.869565, 1.15942)
+position = Vector2(468.63, 284.703)
 texture = ExtResource("3_bmlvq")
-centered = false
-script = ExtResource("4_1lw68")
+script = ExtResource("16_h7p2i")
 
-[node name="Icon2" type="Sprite2D" parent="Besties/MainPlayer"]
-position = Vector2(182.423, 50.8564)
-scale = Vector2(2, 2)
+[node name="Icon1" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(-111.955, -30.7799)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_o5yt6")
+
+[node name="Icon2" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(-111.955, 38.7853)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_o5yt6")
+
+[node name="Icon3" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(-203.259, 38.7853)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_o5yt6")
+
+[node name="Icon4" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(-30.7953, -30.7799)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_o5yt6")
+
+[node name="Icon5" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(-30.7953, 38.7853)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_o5yt6")
+
+[node name="Icon6" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(50.3641, 38.7853)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_o5yt6")
+
+[node name="Icon7" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(50.3641, -30.7799)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_o5yt6")
+
+[node name="Icon8" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(131.523, -30.7799)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_o5yt6")
+
+[node name="Icon9" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(131.523, 38.7853)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_o5yt6")
+
+[node name="Icon10" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(212.683, 38.7853)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_o5yt6")
+
+[node name="Start" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(-203.259, -30.7799)
+scale = Vector2(1.74683, 1.67345)
 texture = ExtResource("5_h0bsd")
-script = ExtResource("6_2p68k")
-id = 23
 
-[node name="Icon3" type="Sprite2D" parent="Besties/MainPlayer"]
-position = Vector2(566.125, 103.643)
-scale = Vector2(3.20695, 1.15601)
-texture = ExtResource("5_h0bsd")
-script = ExtResource("6_2p68k")
-id = 23
-
-[node name="Icon5" type="Sprite2D" parent="Besties/MainPlayer"]
-position = Vector2(342.442, 125.916)
-scale = Vector2(2, 2)
+[node name="End" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(212.683, -30.7799)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_ee7lu")
-script = ExtResource("6_2p68k")
-id = 25
 
-[node name="Icon6" type="Sprite2D" parent="Besties/MainPlayer"]
-position = Vector2(775.086, 60.6639)
-scale = Vector2(4.57245, 1.48045)
-texture = ExtResource("7_ee7lu")
-script = ExtResource("6_2p68k")
-id = 25
+[node name="Door" type="AudioStreamPlayer" parent="Besties/Bg"]
+stream = ExtResource("17_4dgm4")
 
 [node name="BG3" type="Sprite2D" parent="."]
 visible = false
@@ -91,10 +123,10 @@ script = ExtResource("15_cb7o7")
 [node name="Bumble" parent="." instance=ExtResource("16_qfaaf")]
 visible = false
 
-[connection signal="finished" from="Besties/MainPlayer" to="BG2" method="MakeInvis"]
-[connection signal="finished" from="Besties/MainPlayer" to="Clams" method="MakeInvis"]
-[connection signal="finished" from="Besties/MainPlayer" to="Besties" method="MakeInvis"]
-[connection signal="finished" from="Besties/MainPlayer" to="BG3" method="MakeInvis"]
+[connection signal="finished" from="Besties/Bg" to="BG2" method="MakeInvis"]
+[connection signal="finished" from="Besties/Bg" to="Clams" method="MakeInvis"]
+[connection signal="finished" from="Besties/Bg" to="Besties" method="MakeInvis"]
+[connection signal="finished" from="Besties/Bg" to="BG3" method="MakeInvis"]
 [connection signal="Done" from="Bumble" to="BG2" method="_on_bumble_done"]
 [connection signal="Done" from="Bumble" to="Clams" method="_on_bumble_done"]
 [connection signal="Done" from="Bumble" to="Besties" method="_on_bumble_done"]

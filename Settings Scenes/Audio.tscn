@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmfmles7n6a8y"]
+[gd_scene load_steps=5 format=3 uid="uid://cmfmles7n6a8y"]
 
 [ext_resource type="Texture2D" uid="uid://duuu30be6cugk" path="res://Resources/UImenus/Settings/Audio/audiomaster.png" id="1_epadp"]
 [ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="2_hu6k6"]
+[ext_resource type="AudioStream" uid="uid://byx0nqhyw1usw" path="res://Resources/Sounds/UIsound.mp3" id="3_k6k2h"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_ri7ib"]
 
@@ -40,3 +41,6 @@ scale = Vector2(-137.051, 76.2591)
 texture = SubResource("ImageTexture_ri7ib")
 script = ExtResource("2_hu6k6")
 ScenePath = "res://Settings Scenes/Credits.tscn"
+
+[node name="Door" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_k6k2h")

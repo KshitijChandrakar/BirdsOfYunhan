@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://mbwmiqtm346x"]
+[gd_scene load_steps=7 format=3 uid="uid://mbwmiqtm346x"]
 
 [ext_resource type="Texture2D" uid="uid://wymi4axyuxoi" path="res://Resources/UImenus/Settings/Credits/Connie.png" id="1_7ehxt"]
 [ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="2_cnn0r"]
 [ext_resource type="Script" path="res://GlobalScripts/Hover.gd" id="3_ki6qv"]
+[ext_resource type="AudioStream" uid="uid://byx0nqhyw1usw" path="res://Resources/Sounds/UIsound.mp3" id="4_rc7b1"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_udctg"]
 
@@ -92,3 +93,6 @@ scale = Vector2(210, -32)
 texture = SubResource("ImageTexture_xvr4c")
 script = ExtResource("3_ki6qv")
 ImagePath = "res://Resources/UImenus/Settings/Credits/JadePalaceYaya.png"
+
+[node name="Door" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_rc7b1")

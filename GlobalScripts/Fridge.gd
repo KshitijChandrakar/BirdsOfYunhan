@@ -1,15 +1,10 @@
 extends Node
 
-@export var Total = 0
+@export var Total_Num_of_Objects = 0
 var allPlaced = true
-@export var baseStr = "Object"
-@onready var Objects = [$Object1]
 @export var ScenePath = ""
+@onready var Objects = [$Object1, $Object2, $Object3, $Object4, $Object5, $Object6, $Object7]
 var iterated = []
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -19,7 +14,7 @@ func _process(delta):
 				
 				iterated.append(i)
 	
-	if len(iterated) >= Total:
+	if len(iterated) >= Total_Num_of_Objects:
 		
 		get_tree().change_scene_to_file(ScenePath)	
 	pass

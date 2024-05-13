@@ -1,12 +1,15 @@
-[gd_scene load_steps=8 format=3 uid="uid://3eqkhb812dsl"]
+[gd_scene load_steps=11 format=3 uid="uid://3eqkhb812dsl"]
 
 [ext_resource type="Texture2D" uid="uid://55hwsetfatj5" path="res://Resources/bgs/GamingDate.png" id="1_86ett"]
 [ext_resource type="Script" path="res://GlobalScripts/ChangeSceneOnSignal.gd" id="2_6niww"]
 [ext_resource type="Texture2D" uid="uid://bgohuk8umplrn" path="res://Resources/bgs/Dots/dots puzzle.png" id="3_y4u2n"]
-[ext_resource type="Script" path="res://GlobalScripts/Wires.gd" id="4_j6lvi"]
+[ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/WirePuzzle2.gd" id="4_b062b"]
+[ext_resource type="Texture2D" uid="uid://jgvemkib11fk" path="res://Resources/bgs/Dots/Dot.png" id="5_1u31u"]
 [ext_resource type="Texture2D" uid="uid://xq6b6enwep3m" path="res://Resources/bgs/Dots/flower.png" id="5_g2ydm"]
-[ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/Wires2.gd" id="6_5gukv"]
 [ext_resource type="Texture2D" uid="uid://dtgtwrqk4yck1" path="res://Resources/bgs/Dots/heart.png" id="7_l7csx"]
+[ext_resource type="AudioStream" uid="uid://dlwiyyphm7ugy" path="res://Resources/Sounds/sweetvibe-6856.mp3" id="8_fwgmg"]
+[ext_resource type="Script" path="res://GlobalScripts/Loop.gd" id="9_b7tdp"]
+[ext_resource type="AudioStream" uid="uid://byx0nqhyw1usw" path="res://Resources/Sounds/UIsound.mp3" id="10_6agvp"]
 
 [node name="Gaming" type="Node2D"]
 
@@ -17,39 +20,79 @@ centered = false
 script = ExtResource("2_6niww")
 ScenePath = "res://Scenes/kitchen_date.tscn"
 
-[node name="MainPlayer" type="Sprite2D" parent="."]
-position = Vector2(274, 472)
-scale = Vector2(0.6, 0.8)
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(575, 534)
 texture = ExtResource("3_y4u2n")
-centered = false
-script = ExtResource("4_j6lvi")
+script = ExtResource("4_b062b")
+Total_Num_Of_Dots = 10
+Base_String = "Icon"
 
-[node name="Icon2" type="Sprite2D" parent="MainPlayer"]
-position = Vector2(182.423, 50.8564)
-scale = Vector2(2, 2)
+[node name="Icon1" type="Sprite2D" parent="Bg"]
+position = Vector2(-111.955, -30.7799)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1u31u")
+
+[node name="Icon2" type="Sprite2D" parent="Bg"]
+position = Vector2(-111.955, 38.7853)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1u31u")
+
+[node name="Icon3" type="Sprite2D" parent="Bg"]
+position = Vector2(-203.259, 38.7853)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1u31u")
+
+[node name="Icon4" type="Sprite2D" parent="Bg"]
+position = Vector2(-30.7953, -30.7799)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1u31u")
+
+[node name="Icon5" type="Sprite2D" parent="Bg"]
+position = Vector2(-30.7953, 38.7853)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1u31u")
+
+[node name="Icon6" type="Sprite2D" parent="Bg"]
+position = Vector2(50.3641, 38.7853)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1u31u")
+
+[node name="Icon7" type="Sprite2D" parent="Bg"]
+position = Vector2(50.3641, -30.7799)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1u31u")
+
+[node name="Icon8" type="Sprite2D" parent="Bg"]
+position = Vector2(131.523, -30.7799)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1u31u")
+
+[node name="Icon9" type="Sprite2D" parent="Bg"]
+position = Vector2(131.523, 38.7853)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1u31u")
+
+[node name="Icon10" type="Sprite2D" parent="Bg"]
+position = Vector2(212.683, 38.7853)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1u31u")
+
+[node name="Start" type="Sprite2D" parent="Bg"]
+position = Vector2(-203.259, -30.7799)
+scale = Vector2(1.74683, 1.67345)
 texture = ExtResource("5_g2ydm")
-script = ExtResource("6_5gukv")
-id = 23
 
-[node name="Icon3" type="Sprite2D" parent="MainPlayer"]
-position = Vector2(566.125, 103.643)
-scale = Vector2(3.20695, 1.15601)
-texture = ExtResource("5_g2ydm")
-script = ExtResource("6_5gukv")
-id = 23
+[node name="Door" type="AudioStreamPlayer" parent="Bg"]
+stream = ExtResource("10_6agvp")
 
-[node name="Icon5" type="Sprite2D" parent="MainPlayer"]
-position = Vector2(342.442, 125.916)
-scale = Vector2(2, 2)
+[node name="End" type="Sprite2D" parent="Bg"]
+position = Vector2(212.683, -30.7799)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_l7csx")
-script = ExtResource("6_5gukv")
-id = 25
 
-[node name="Icon6" type="Sprite2D" parent="MainPlayer"]
-position = Vector2(775.086, 60.6639)
-scale = Vector2(4.57245, 1.48045)
-texture = ExtResource("7_l7csx")
-script = ExtResource("6_5gukv")
-id = 25
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_fwgmg")
+autoplay = true
+script = ExtResource("9_b7tdp")
 
-[connection signal="finished" from="MainPlayer" to="BG" method="_on_main_player_finished"]
+[connection signal="finished" from="Bg" to="BG" method="_on_bg_finished"]

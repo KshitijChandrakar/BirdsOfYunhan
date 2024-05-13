@@ -23,3 +23,4 @@ func MakeInvis(x):
 func _on_bumble_done(x):
 	clams = true
 	pass # Replace with function body.
+

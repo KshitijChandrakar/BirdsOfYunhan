@@ -8,14 +8,14 @@ var dragging = false
 var pressedPos
 var releasedPos
 @export var Base_String = "../Blank"
-@export var Total = 23
+@export var Total_Num_Of_Blanks = 1
 var destination = []
 var dest
 func _ready():
 	originalPos = position
 	
 	if draggable:
-		for i in range(1, Total + 1):
+		for i in range(1, Total_Num_Of_Blanks + 1):
 			var curStr = Base_String + str(i)
 			destination.append(get_node(curStr))
 func _process(_delta):
@@ -34,7 +34,7 @@ func _process(_delta):
 				#offset = 
 				position = get_global_mouse_position()
 				placed = true
-				
+				$"../Door".play()
 			else:
 				position = originalPos
 		

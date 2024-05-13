@@ -8,7 +8,6 @@
 
 [node name="Kitche" type="Node2D"]
 script = ExtResource("1_suhrp")
-Total = 1
 
 [node name="Background" type="Sprite2D" parent="."]
 visible = false
@@ -20,7 +19,6 @@ centered = false
 position = Vector2(264, 200)
 texture = ExtResource("5_2urmg")
 script = ExtResource("10_tams7")
-Total = 1
 
 [node name="Object1" type="Sprite2D" parent="."]
 position = Vector2(840, 536)
@@ -29,4 +27,3 @@ texture = ExtResource("9_4chsf")
 offset = Vector2(0, 40)
 script = ExtResource("10_tams7")
 draggable = true
-Total = 1

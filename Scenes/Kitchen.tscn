@@ -38,7 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://d125l3ikjhbf8" path="res://Resources/Magpie/Magpie 2/Magpie 01_00025.png" id="36_btmi1"]
 [ext_resource type="Texture2D" uid="uid://dbu3l7y2l6ecr" path="res://Resources/Magpie/Magpie 2/Magpie 01_00026.png" id="37_xskpr"]
 [ext_resource type="Texture2D" uid="uid://csvsp3awido1h" path="res://Resources/Magpie/Magpie 2/Magpie 01_00027.png" id="38_lp0cd"]
-[ext_resource type="Script" path="res://GlobalScripts/MainPlayer.gd" id="39_vclun"]
+[ext_resource type="AudioStream" uid="uid://dfen8dx8i3svt" path="res://Resources/Sounds/arrow.mp3" id="40_6ddrs"]
 [ext_resource type="Texture2D" uid="uid://b0e24hwb4wbc5" path="res://Resources/bgs/Kitchen/Kitchen Table.png" id="40_rnsgb"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ab4u6"]
@@ -148,7 +148,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_2c5qb")
 centered = false
 
-[node name="Door" type="Sprite2D" parent="."]
+[node name="Door1" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(1088, 336)
 scale = Vector2(0.517869, 0.477528)
@@ -187,7 +187,6 @@ scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_ab4u6")
 animation = &"Standing Still"
 offset = Vector2(175, 0)
-script = ExtResource("39_vclun")
 
 [node name="KitchenTable" type="Sprite2D" parent="."]
 z_index = 3
@@ -196,4 +195,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("40_rnsgb")
 centered = false
 
-[connection signal="closed" from="KitchenCabinetClose/GarbageCannot" to="Door" method="_on_garbage_cannot_closed"]
+[node name="Door" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("40_6ddrs")
+
+[connection signal="closed" from="KitchenCabinetClose/GarbageCannot" to="Door1" method="_on_garbage_cannot_closed"]

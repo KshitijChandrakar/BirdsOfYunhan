@@ -4,6 +4,7 @@ extends Node2D
 func _ready():
 	print("Entered Elevator waiting ", time, " Seconds")
 	await get_tree().create_timer(time, true).timeout
+	$Door.play()
 	get_tree().change_scene_to_file("res://Scenes/Garbage.tscn")
 	pass # Replace with function body.
 

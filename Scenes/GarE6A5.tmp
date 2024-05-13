@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bmqfp3y76qhmk"]
+[gd_scene load_steps=8 format=3 uid="uid://bmqfp3y76qhmk"]
 
 [ext_resource type="Script" path="res://GlobalScripts/ChangeSceneOnSignal.gd" id="1_8arld"]
 [ext_resource type="Texture2D" uid="uid://u15qtra1lryh" path="res://Resources/bgs/GarbageTruck.png" id="1_8ijue"]
 [ext_resource type="Texture2D" uid="uid://bgohuk8umplrn" path="res://Resources/bgs/Dots/dots puzzle.png" id="3_q4ax4"]
 [ext_resource type="Texture2D" uid="uid://xq6b6enwep3m" path="res://Resources/bgs/Dots/flower.png" id="5_mpfcu"]
 [ext_resource type="Texture2D" uid="uid://dtgtwrqk4yck1" path="res://Resources/bgs/Dots/heart.png" id="7_b4b48"]
-[ext_resource type="AudioStream" uid="uid://da8v1otptalg1" path="res://Resources/Sounds/objects.mp3" id="8_2ch0k"]
 [ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/WirePuzzle2.gd" id="8_j4fah"]
 [ext_resource type="Texture2D" uid="uid://jgvemkib11fk" path="res://Resources/bgs/Dots/Dot.png" id="9_2jdsn"]
 
@@ -19,7 +18,8 @@ script = ExtResource("1_8arld")
 ScenePath = "res://Scenes/Gaming Date.tscn"
 
 [node name="Bg" type="Sprite2D" parent="."]
-position = Vector2(575, 525)
+visible = false
+position = Vector2(468.63, 284.703)
 texture = ExtResource("3_q4ax4")
 script = ExtResource("8_j4fah")
 Total_Num_Of_Dots = 10
@@ -79,9 +79,6 @@ texture = ExtResource("9_2jdsn")
 position = Vector2(-203.259, -30.7799)
 scale = Vector2(1.74683, 1.67345)
 texture = ExtResource("5_mpfcu")
-
-[node name="Door" type="AudioStreamPlayer" parent="Bg"]
-stream = ExtResource("8_2ch0k")
 
 [node name="End" type="Sprite2D" parent="Bg"]
 position = Vector2(212.683, -30.7799)

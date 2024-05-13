@@ -1,42 +1,46 @@
 [gd_scene load_steps=5 format=3 uid="uid://btjffyptb8ylr"]
 
 [ext_resource type="Texture2D" uid="uid://slmv47cshbir" path="res://Main Player.png" id="1_3msbm"]
+[ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/WirePuzzle2.gd" id="2_hgxg8"]
 [ext_resource type="Texture2D" uid="uid://2564t43p5kxp" path="res://icon.svg" id="2_uks3q"]
-[ext_resource type="Script" path="res://GlobalScripts/Wires.gd" id="3_2c1cc"]
-[ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/Wires2.gd" id="3_42a7d"]
+[ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/Reset.gd" id="4_ay2fk"]
 
 [node name="Dots Game" type="Node2D"]
 
-[node name="MainPlayer" type="Sprite2D" parent="."]
-scale = Vector2(1.59916, 0.700957)
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(573.75, 326)
+scale = Vector2(4.85443, 1.54067)
 texture = ExtResource("1_3msbm")
-centered = false
-script = ExtResource("3_2c1cc")
+script = ExtResource("2_hgxg8")
+Base_String = "Icon"
 
-[node name="Icon2" type="Sprite2D" parent="MainPlayer"]
-position = Vector2(45.4927, 124.473)
-scale = Vector2(0.530065, 1.00867)
+[node name="Reset" type="Sprite2D" parent="Bg"]
+position = Vector2(87.8064, -146.689)
+scale = Vector2(0.205997, 0.649068)
 texture = ExtResource("2_uks3q")
-script = ExtResource("3_42a7d")
-id = 23
+script = ExtResource("4_ay2fk")
 
-[node name="Icon3" type="Sprite2D" parent="MainPlayer"]
-position = Vector2(181.027, 223.503)
-scale = Vector2(0.561727, 0.854509)
+[node name="Icon1" type="Sprite2D" parent="Bg"]
+position = Vector2(-97.5913, -123.972)
+scale = Vector2(0.205997, 0.649068)
 texture = ExtResource("2_uks3q")
-script = ExtResource("3_42a7d")
-id = 23
 
-[node name="Icon5" type="Sprite2D" parent="MainPlayer"]
-position = Vector2(79.4169, 313.857)
-scale = Vector2(0.561727, 0.854509)
+[node name="Icon2" type="Sprite2D" parent="Bg"]
+position = Vector2(-41.56, -53.8727)
+scale = Vector2(0.205997, 0.649068)
 texture = ExtResource("2_uks3q")
-script = ExtResource("3_42a7d")
-id = 25
 
-[node name="Icon6" type="Sprite2D" parent="MainPlayer"]
-position = Vector2(170.715, 99.8635)
-scale = Vector2(0.561727, 0.854509)
+[node name="Icon3" type="Sprite2D" parent="Bg"]
+position = Vector2(-90.9993, 23.3665)
+scale = Vector2(0.205997, 0.649068)
 texture = ExtResource("2_uks3q")
-script = ExtResource("3_42a7d")
-id = 25
+
+[node name="End" type="Sprite2D" parent="Bg"]
+position = Vector2(-0.360497, 92.1677)
+scale = Vector2(0.102999, 0.643997)
+texture = ExtResource("2_uks3q")
+
+[node name="Start" type="Sprite2D" parent="Bg"]
+position = Vector2(-47.1219, -165.512)
+scale = Vector2(0.09978, 0.47666)
+texture = ExtResource("2_uks3q")

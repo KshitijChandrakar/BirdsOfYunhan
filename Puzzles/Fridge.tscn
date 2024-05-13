@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://c3mncu8u4nv43"]
+[gd_scene load_steps=18 format=3 uid="uid://c3mncu8u4nv43"]
 
 [ext_resource type="Script" path="res://GlobalScripts/Fridge.gd" id="1_7d7ug"]
 [ext_resource type="Texture2D" uid="uid://lgypxdd1d701" path="res://Resources/UImenus/Games/kitchencabop.png" id="1_nnt8y"]
@@ -16,10 +16,11 @@
 [ext_resource type="Texture2D" uid="uid://bw44p03nemirg" path="res://Resources/UImenus/Games/Fridge Objects/Layer 15 copy.png" id="12_cok4r"]
 [ext_resource type="Texture2D" uid="uid://emn1dd33vhim" path="res://Resources/UImenus/Games/Fridge Objects/Layer 11 copy.png" id="13_s3py7"]
 [ext_resource type="Texture2D" uid="uid://cx0wyefpw584i" path="res://Resources/UImenus/Blank.png" id="14_ccgsh"]
+[ext_resource type="AudioStream" uid="uid://dfen8dx8i3svt" path="res://Resources/Sounds/arrow.mp3" id="17_b1mxu"]
 
 [node name="Kitche" type="Node2D"]
 script = ExtResource("1_7d7ug")
-Total = 7
+Total_Num_of_Objects = 7
 ScenePath = "res://Scenes/Kitchen.tscn"
 
 [node name="Background" type="Sprite2D" parent="."]
@@ -108,139 +109,10 @@ script = ExtResource("9_swgfp")
 draggable = true
 
 [node name="Blank1" type="Sprite2D" parent="."]
-position = Vector2(32, 168)
-scale = Vector2(50, 100)
+position = Vector2(188, 344)
+scale = Vector2(360, 608)
 texture = ExtResource("14_ccgsh")
 script = ExtResource("9_swgfp")
 
-[node name="Blank2" type="Sprite2D" parent="."]
-position = Vector2(96, 168)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank3" type="Sprite2D" parent="."]
-position = Vector2(160, 168)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank4" type="Sprite2D" parent="."]
-position = Vector2(224, 168)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank5" type="Sprite2D" parent="."]
-position = Vector2(288, 168)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank6" type="Sprite2D" parent="."]
-position = Vector2(352, 168)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank7" type="Sprite2D" parent="."]
-position = Vector2(33, 74)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank8" type="Sprite2D" parent="."]
-position = Vector2(97, 74)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank9" type="Sprite2D" parent="."]
-position = Vector2(161, 74)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank10" type="Sprite2D" parent="."]
-position = Vector2(225, 74)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank11" type="Sprite2D" parent="."]
-position = Vector2(289, 74)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank12" type="Sprite2D" parent="."]
-position = Vector2(353, 74)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank13" type="Sprite2D" parent="."]
-position = Vector2(25, 386)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank14" type="Sprite2D" parent="."]
-position = Vector2(89, 386)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank15" type="Sprite2D" parent="."]
-position = Vector2(153, 386)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank16" type="Sprite2D" parent="."]
-position = Vector2(217, 386)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank17" type="Sprite2D" parent="."]
-position = Vector2(281, 386)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank18" type="Sprite2D" parent="."]
-position = Vector2(345, 386)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank19" type="Sprite2D" parent="."]
-position = Vector2(17595, 38986)
-scale = Vector2(2500, 10000)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank20" type="Sprite2D" parent="."]
-position = Vector2(91, 557)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank21" type="Sprite2D" parent="."]
-position = Vector2(155, 557)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank22" type="Sprite2D" parent="."]
-position = Vector2(219, 557)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
-
-[node name="Blank23" type="Sprite2D" parent="."]
-position = Vector2(283, 557)
-scale = Vector2(50, 100)
-texture = ExtResource("14_ccgsh")
-script = ExtResource("9_swgfp")
+[node name="Door" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_b1mxu")

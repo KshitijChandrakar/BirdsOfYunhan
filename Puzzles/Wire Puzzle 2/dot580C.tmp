@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://btjffyptb8ylr"]
+
+[ext_resource type="Texture2D" uid="uid://slmv47cshbir" path="res://Main Player.png" id="1_3msbm"]
+[ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/WirePuzzle2.gd" id="2_hgxg8"]
+
+[node name="Dots Game" type="Node2D"]
+script = ExtResource("2_hgxg8")
+
+[node name="MainPlayer" type="Sprite2D" parent="."]
+position = Vector2(573.75, 326)
+scale = Vector2(4.85443, 1.54067)
+texture = ExtResource("1_3msbm")

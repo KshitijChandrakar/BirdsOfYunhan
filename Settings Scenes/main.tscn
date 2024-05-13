@@ -1,20 +1,53 @@
-[gd_scene load_steps=3 format=3 uid="uid://bhcc4rsfkx5rp"]
+[gd_scene load_steps=9 format=3 uid="uid://bhcc4rsfkx5rp"]
 
-[ext_resource type="Texture2D" uid="uid://2564t43p5kxp" path="res://icon.svg" id="1_86uud"]
+[ext_resource type="Texture2D" uid="uid://c2a7qvov1ub3o" path="res://Resources/titlescreen2222.png" id="1_ii2rv"]
 [ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="2_ajaec"]
+[ext_resource type="Script" path="res://Settings Scenes/Quit.gd" id="3_is1rx"]
+[ext_resource type="AudioStream" uid="uid://byx0nqhyw1usw" path="res://Resources/Sounds/UIsound.mp3" id="4_vk2ga"]
+[ext_resource type="AudioStream" uid="uid://bx8u1cvd4oamu" path="res://Resources/Sounds/toriyama-199714.mp3" id="5_m6gyp"]
+[ext_resource type="Script" path="res://GlobalScripts/Loop.gd" id="6_j3poj"]
+
+[sub_resource type="Gradient" id="Gradient_gact4"]
+offsets = PackedFloat32Array(0.322034)
+colors = PackedColorArray(0, 0, 0, 0.00392157)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_pbj1j"]
+gradient = SubResource("Gradient_gact4")
 
 [node name="Main" type="Node2D"]
 
+[node name="Titlescreen2222" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_ii2rv")
+centered = false
+
 [node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(301, 300)
-scale = Vector2(2.70313, 2.8125)
-texture = ExtResource("1_86uud")
+position = Vector2(118.118, 111.155)
+rotation = -0.648727
+scale = Vector2(0.795, 95.18)
+texture = SubResource("GradientTexture1D_pbj1j")
 script = ExtResource("2_ajaec")
 ScenePath = "res://Puzzles/Fridge.tscn"
 
 [node name="Icon2" type="Sprite2D" parent="."]
-position = Vector2(795, 291)
-scale = Vector2(2.70313, 2.8125)
-texture = ExtResource("1_86uud")
+position = Vector2(116.6, 552.229)
+rotation = 0.84013
+scale = Vector2(0.795, 92.3043)
+texture = SubResource("GradientTexture1D_pbj1j")
 script = ExtResource("2_ajaec")
 ScenePath = "res://Settings Scenes/General.tscn"
+
+[node name="Icon3" type="Sprite2D" parent="."]
+position = Vector2(1031, 541)
+rotation = -0.695008
+scale = Vector2(0.795, 92.3043)
+texture = SubResource("GradientTexture1D_pbj1j")
+script = ExtResource("3_is1rx")
+
+[node name="Door" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_vk2ga")
+
+[node name="Loop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_m6gyp")
+autoplay = true
+script = ExtResource("6_j3poj")

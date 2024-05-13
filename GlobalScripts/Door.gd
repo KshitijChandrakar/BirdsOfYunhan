@@ -1,6 +1,7 @@
 extends Sprite2D
 @export var ScenePath = ""
 @export var click = true
+@export var sound = false
 @export var mode = 0
 var arrow = load("res://Resources/cursors/cursornorm-01-01.png")
 var beam = load("res://Resources/cursors/cursorshine-01-01.png")
@@ -15,6 +16,7 @@ func _process(delta):
 			Input.set_custom_mouse_cursor(beam, Input.CURSOR_IBEAM)
 			if not click:
 				if ScenePath != "":
+					$"../Door".play()
 					get_tree().change_scene_to_file(ScenePath)
 
 func _input(event):
@@ -23,6 +25,7 @@ func _input(event):
 			if get_rect().has_point(to_local(event.position)):
 				#add_child(scene)
 				if ScenePath != "" and visible:
+					$"../Door".play(0)
 					get_tree().change_scene_to_file(ScenePath)
 
 

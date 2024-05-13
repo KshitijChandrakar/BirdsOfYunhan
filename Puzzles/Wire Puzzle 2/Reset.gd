@@ -1,11 +1,14 @@
-extends Node2D
-@export var time = 10
+extends Sprite2D
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print("Entered Elevator waiting ", time, " Seconds")
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	
+	if Input.is_action_just_pressed("ui_leftMouseClick") and get_rect().has_point(to_local(get_global_mouse_position())):
+		
+		$"..".LineMain.clear_points()
