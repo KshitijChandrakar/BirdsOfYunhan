@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cli0e0b45ucj7"]
+[gd_scene load_steps=3 format=3 uid="uid://cli0e0b45ucj7"]
 
 [ext_resource type="Texture2D" uid="uid://b13li5rht7m3w" path="res://Resources/bgs/ring.png" id="1_7yge3"]
+[ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="2_kyexy"]
 
 [node name="Ring" type="Node2D"]
 
@@ -8,3 +9,5 @@
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_7yge3")
 centered = false
+script = ExtResource("2_kyexy")
+ScenePath = "res://Scenes/airport.tscn"

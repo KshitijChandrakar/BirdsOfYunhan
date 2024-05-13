@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doq5tx6v7owyq"
-path="res://.godot/imported/character profilessheet.png-1d7ce36a9caf78e804243e6f819a3e0b.ctex"
+uid="uid://c7lpcaab1grbd"
+path="res://.godot/imported/Magpie inverted_00009.png-f2ad20c6041d9c4c20a9515ceb0374e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character profilessheet.png"
-dest_files=["res://.godot/imported/character profilessheet.png-1d7ce36a9caf78e804243e6f819a3e0b.ctex"]
+source_file="res://Resources/Magpie/Magpie inverted/Magpie inverted_00009.png"
+dest_files=["res://.godot/imported/Magpie inverted_00009.png-f2ad20c6041d9c4c20a9515ceb0374e6.ctex"]
 
 [params]
 

@@ -13,6 +13,5 @@ func _process(delta):
 
 func _on_main_player_finished(Done):
 	if Done:
-		print("Recieved signal finished, switching")
 		get_tree().change_scene_to_file(ScenePath)
 	pass # Replace with function body.

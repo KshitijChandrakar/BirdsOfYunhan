@@ -1,8 +1,138 @@
-[gd_scene load_steps=4 format=3 uid="uid://dntvl2v4xubom"]
+[gd_scene load_steps=35 format=3 uid="uid://dntvl2v4xubom"]
 
 [ext_resource type="Texture2D" uid="uid://cywd2l6ap6wno" path="res://Resources/bgs/lobby.png" id="1_skdv4"]
-[ext_resource type="Texture2D" uid="uid://cbbmu8gsg02n7" path="res://Resources/Arrow.png" id="2_xdfs1"]
+[ext_resource type="Texture2D" uid="uid://p42ov0x4lr2p" path="res://Resources/Arrow.png" id="2_xdfs1"]
 [ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="3_pmwhc"]
+[ext_resource type="Texture2D" uid="uid://batafod2ugkxp" path="res://Resources/EmoKid.png" id="4_5a4kn"]
+[ext_resource type="Texture2D" uid="uid://g1qev5xgyjtx" path="res://Resources/Magpie/Magpie 2/Magpie 01_00000.png" id="5_6ouvh"]
+[ext_resource type="Texture2D" uid="uid://c3bxm52ik0qrs" path="res://Resources/Magpie/Magpie 2/Magpie 01_00001.png" id="6_mqyq2"]
+[ext_resource type="Texture2D" uid="uid://dw6eu7bq585md" path="res://Resources/Magpie/Magpie 2/Magpie 01_00002.png" id="7_dxyor"]
+[ext_resource type="Texture2D" uid="uid://d03ya7udkwcyi" path="res://Resources/Magpie/Magpie 2/Magpie 01_00003.png" id="8_58jij"]
+[ext_resource type="Texture2D" uid="uid://ccyc80555h1r6" path="res://Resources/Magpie/Magpie 2/Magpie 01_00004.png" id="9_vd52x"]
+[ext_resource type="Texture2D" uid="uid://cy47fhe7qrnhj" path="res://Resources/Magpie/Magpie 2/Magpie 01_00005.png" id="10_06yai"]
+[ext_resource type="Texture2D" uid="uid://dbjjhgm63pipc" path="res://Resources/Magpie/Magpie 2/Magpie 01_00006.png" id="11_ykw5c"]
+[ext_resource type="Texture2D" uid="uid://bqrlp2fbviahf" path="res://Resources/Magpie/Magpie 2/Magpie 01_00007.png" id="12_mop1d"]
+[ext_resource type="Texture2D" uid="uid://clyid4qpkftxd" path="res://Resources/Magpie/Magpie 2/Magpie 01_00008.png" id="13_kcuwc"]
+[ext_resource type="Texture2D" uid="uid://cdcjllo1i3ewd" path="res://Resources/Magpie/Magpie 2/Magpie 01_00009.png" id="14_1w771"]
+[ext_resource type="Texture2D" uid="uid://bdo2lle1p76o0" path="res://Resources/Magpie/Magpie 2/Magpie 01_00010.png" id="15_fysrg"]
+[ext_resource type="Texture2D" uid="uid://qo70e4jpwgpd" path="res://Resources/Magpie/Magpie 2/Magpie 01_00011.png" id="16_txroa"]
+[ext_resource type="Texture2D" uid="uid://c67lfox8pgs1q" path="res://Resources/Magpie/Magpie 2/Magpie 01_00012.png" id="17_8fesk"]
+[ext_resource type="Texture2D" uid="uid://betg4x5qiskam" path="res://Resources/Magpie/Magpie 2/Magpie 01_00013.png" id="18_bwye2"]
+[ext_resource type="Texture2D" uid="uid://b48q1vvilyi1a" path="res://Resources/Magpie/Magpie 2/Magpie 01_00014.png" id="19_qkmg2"]
+[ext_resource type="Texture2D" uid="uid://cfuheqigh2vk5" path="res://Resources/Magpie/Magpie 2/Magpie 01_00015.png" id="20_en2yq"]
+[ext_resource type="Texture2D" uid="uid://du7oxv8g2ub84" path="res://Resources/Magpie/Magpie 2/Magpie 01_00016.png" id="21_pqihl"]
+[ext_resource type="Texture2D" uid="uid://cp7y52mi3gfls" path="res://Resources/Magpie/Magpie 2/Magpie 01_00017.png" id="22_3rp8i"]
+[ext_resource type="Texture2D" uid="uid://de0a7rmqxikbx" path="res://Resources/Magpie/Magpie 2/Magpie 01_00018.png" id="23_h3jp5"]
+[ext_resource type="Texture2D" uid="uid://12vqqekltlfe" path="res://Resources/Magpie/Magpie 2/Magpie 01_00019.png" id="24_6ntna"]
+[ext_resource type="Texture2D" uid="uid://qgb61laduk0w" path="res://Resources/Magpie/Magpie 2/Magpie 01_00020.png" id="25_nsscx"]
+[ext_resource type="Texture2D" uid="uid://3anehlhx1hj5" path="res://Resources/Magpie/Magpie 2/Magpie 01_00021.png" id="26_kjxk8"]
+[ext_resource type="Texture2D" uid="uid://b807wgh8o16wy" path="res://Resources/Magpie/Magpie 2/Magpie 01_00022.png" id="27_knqme"]
+[ext_resource type="Texture2D" uid="uid://u8m88dklhgrf" path="res://Resources/Magpie/Magpie 2/Magpie 01_00023.png" id="28_pkujm"]
+[ext_resource type="Texture2D" uid="uid://o2m6ywkqagy" path="res://Resources/Magpie/Magpie 2/Magpie 01_00024.png" id="29_3yp4r"]
+[ext_resource type="Texture2D" uid="uid://d125l3ikjhbf8" path="res://Resources/Magpie/Magpie 2/Magpie 01_00025.png" id="30_x8df3"]
+[ext_resource type="Texture2D" uid="uid://dbu3l7y2l6ecr" path="res://Resources/Magpie/Magpie 2/Magpie 01_00026.png" id="31_aqesa"]
+[ext_resource type="Texture2D" uid="uid://csvsp3awido1h" path="res://Resources/Magpie/Magpie 2/Magpie 01_00027.png" id="32_3qmmi"]
+[ext_resource type="Script" path="res://GlobalScripts/MainPlayer.gd" id="33_2uwui"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ot5cl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_5a4kn")
+}],
+"loop": true,
+"name": &"Standing Still",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("5_6ouvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mqyq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dxyor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_58jij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vd52x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_06yai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ykw5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_mop1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_kcuwc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1w771")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_fysrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_txroa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_8fesk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bwye2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_qkmg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_en2yq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_pqihl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_3rp8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_h3jp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_6ntna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_nsscx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_kjxk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_knqme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_pkujm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_3yp4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_x8df3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_aqesa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_3qmmi")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 30.0
+}]
 
 [node name="Lobby" type="Node2D"]
 
@@ -25,3 +155,11 @@ scale = Vector2(0.373, 1)
 texture = ExtResource("2_xdfs1")
 script = ExtResource("3_pmwhc")
 ScenePath = "res://Scenes/LivingRoom2.tscn"
+
+[node name="Main Emo Kid" type="AnimatedSprite2D" parent="."]
+position = Vector2(248, 336)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_ot5cl")
+animation = &"Standing Still"
+offset = Vector2(175, 0)
+script = ExtResource("33_2uwui")

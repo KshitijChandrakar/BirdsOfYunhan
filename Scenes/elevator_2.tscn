@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bew4us5srhmwk" path="res://Resources/bgs/elevator int.png" id="1_obw3y"]
 [ext_resource type="Script" path="res://Scenes/elevator_2.gd" id="1_ued1d"]
-[ext_resource type="Texture2D" uid="uid://slmv47cshbir" path="res://Main Player.png" id="3_t2hq1"]
+[ext_resource type="Texture2D" uid="uid://doq5tx6v7owyq" path="res://Resources/character profilessheet.png" id="3_8qr3u"]
 
 [node name="Elevator2" type="Node2D"]
 script = ExtResource("1_ued1d")
@@ -13,10 +13,15 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_obw3y")
 centered = false
 
-[node name="MainPlayer" type="Sprite2D" parent="."]
-position = Vector2(437, 369)
-texture = ExtResource("3_t2hq1")
-
 [node name="MainPlayer2" type="Sprite2D" parent="."]
-position = Vector2(723, 361)
-texture = ExtResource("3_t2hq1")
+position = Vector2(715, 321)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_8qr3u")
+hframes = 6
+frame = 3
+
+[node name="MainPlayer3" type="Sprite2D" parent="."]
+position = Vector2(435, 343)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_8qr3u")
+hframes = 6

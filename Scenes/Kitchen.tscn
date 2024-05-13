@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c8pjdit3ah6fm"]
+[gd_scene load_steps=42 format=3 uid="uid://c8pjdit3ah6fm"]
 
 [ext_resource type="Texture2D" uid="uid://b6jm102puhcea" path="res://Resources/bgs/Kitchen/KitchenBg.png" id="1_2c5qb"]
 [ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="2_unkc0"]
@@ -9,6 +9,137 @@
 [ext_resource type="Script" path="res://GlobalScripts/CloseButton.gd" id="6_byhwe"]
 [ext_resource type="Texture2D" uid="uid://utgusqb238ar" path="res://Resources/bgs/Kitchen/GarbageCan.png" id="8_fvf8e"]
 [ext_resource type="Texture2D" uid="uid://coqlwoqnlers2" path="res://Resources/bgs/Kitchen/GarbageCannot.png" id="9_rv55n"]
+[ext_resource type="Texture2D" uid="uid://batafod2ugkxp" path="res://Resources/EmoKid.png" id="10_imrrl"]
+[ext_resource type="Texture2D" uid="uid://g1qev5xgyjtx" path="res://Resources/Magpie/Magpie 2/Magpie 01_00000.png" id="11_a8wy3"]
+[ext_resource type="Texture2D" uid="uid://c3bxm52ik0qrs" path="res://Resources/Magpie/Magpie 2/Magpie 01_00001.png" id="12_jrc6c"]
+[ext_resource type="Texture2D" uid="uid://dw6eu7bq585md" path="res://Resources/Magpie/Magpie 2/Magpie 01_00002.png" id="13_ffk8i"]
+[ext_resource type="Texture2D" uid="uid://d03ya7udkwcyi" path="res://Resources/Magpie/Magpie 2/Magpie 01_00003.png" id="14_g6kx5"]
+[ext_resource type="Texture2D" uid="uid://ccyc80555h1r6" path="res://Resources/Magpie/Magpie 2/Magpie 01_00004.png" id="15_3axk8"]
+[ext_resource type="Texture2D" uid="uid://cy47fhe7qrnhj" path="res://Resources/Magpie/Magpie 2/Magpie 01_00005.png" id="16_6idad"]
+[ext_resource type="Texture2D" uid="uid://dbjjhgm63pipc" path="res://Resources/Magpie/Magpie 2/Magpie 01_00006.png" id="17_7kqvn"]
+[ext_resource type="Texture2D" uid="uid://bqrlp2fbviahf" path="res://Resources/Magpie/Magpie 2/Magpie 01_00007.png" id="18_o3vgi"]
+[ext_resource type="Texture2D" uid="uid://clyid4qpkftxd" path="res://Resources/Magpie/Magpie 2/Magpie 01_00008.png" id="19_soc1h"]
+[ext_resource type="Texture2D" uid="uid://cdcjllo1i3ewd" path="res://Resources/Magpie/Magpie 2/Magpie 01_00009.png" id="20_obr4k"]
+[ext_resource type="Texture2D" uid="uid://bdo2lle1p76o0" path="res://Resources/Magpie/Magpie 2/Magpie 01_00010.png" id="21_on2ao"]
+[ext_resource type="Texture2D" uid="uid://qo70e4jpwgpd" path="res://Resources/Magpie/Magpie 2/Magpie 01_00011.png" id="22_3famt"]
+[ext_resource type="Texture2D" uid="uid://c67lfox8pgs1q" path="res://Resources/Magpie/Magpie 2/Magpie 01_00012.png" id="23_o2qmv"]
+[ext_resource type="Texture2D" uid="uid://betg4x5qiskam" path="res://Resources/Magpie/Magpie 2/Magpie 01_00013.png" id="24_pbtgu"]
+[ext_resource type="Texture2D" uid="uid://b48q1vvilyi1a" path="res://Resources/Magpie/Magpie 2/Magpie 01_00014.png" id="25_2xcwa"]
+[ext_resource type="Texture2D" uid="uid://cfuheqigh2vk5" path="res://Resources/Magpie/Magpie 2/Magpie 01_00015.png" id="26_i6305"]
+[ext_resource type="Texture2D" uid="uid://du7oxv8g2ub84" path="res://Resources/Magpie/Magpie 2/Magpie 01_00016.png" id="27_858xd"]
+[ext_resource type="Texture2D" uid="uid://cp7y52mi3gfls" path="res://Resources/Magpie/Magpie 2/Magpie 01_00017.png" id="28_sy5am"]
+[ext_resource type="Texture2D" uid="uid://de0a7rmqxikbx" path="res://Resources/Magpie/Magpie 2/Magpie 01_00018.png" id="29_ci8s6"]
+[ext_resource type="Texture2D" uid="uid://12vqqekltlfe" path="res://Resources/Magpie/Magpie 2/Magpie 01_00019.png" id="30_gd5n3"]
+[ext_resource type="Texture2D" uid="uid://qgb61laduk0w" path="res://Resources/Magpie/Magpie 2/Magpie 01_00020.png" id="31_dlglw"]
+[ext_resource type="Texture2D" uid="uid://3anehlhx1hj5" path="res://Resources/Magpie/Magpie 2/Magpie 01_00021.png" id="32_kqaju"]
+[ext_resource type="Texture2D" uid="uid://b807wgh8o16wy" path="res://Resources/Magpie/Magpie 2/Magpie 01_00022.png" id="33_vlkr8"]
+[ext_resource type="Texture2D" uid="uid://u8m88dklhgrf" path="res://Resources/Magpie/Magpie 2/Magpie 01_00023.png" id="34_ohii5"]
+[ext_resource type="Texture2D" uid="uid://o2m6ywkqagy" path="res://Resources/Magpie/Magpie 2/Magpie 01_00024.png" id="35_anm4n"]
+[ext_resource type="Texture2D" uid="uid://d125l3ikjhbf8" path="res://Resources/Magpie/Magpie 2/Magpie 01_00025.png" id="36_btmi1"]
+[ext_resource type="Texture2D" uid="uid://dbu3l7y2l6ecr" path="res://Resources/Magpie/Magpie 2/Magpie 01_00026.png" id="37_xskpr"]
+[ext_resource type="Texture2D" uid="uid://csvsp3awido1h" path="res://Resources/Magpie/Magpie 2/Magpie 01_00027.png" id="38_lp0cd"]
+[ext_resource type="Script" path="res://GlobalScripts/MainPlayer.gd" id="39_vclun"]
+[ext_resource type="Texture2D" uid="uid://b0e24hwb4wbc5" path="res://Resources/bgs/Kitchen/Kitchen Table.png" id="40_rnsgb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ab4u6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_imrrl")
+}],
+"loop": true,
+"name": &"Standing Still",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("11_a8wy3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_jrc6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ffk8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_g6kx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_3axk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_6idad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7kqvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_o3vgi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_soc1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_obr4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_on2ao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_3famt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_o2qmv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_pbtgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2xcwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_i6305")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_858xd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_sy5am")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ci8s6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_gd5n3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_dlglw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_kqaju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_vlkr8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ohii5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_anm4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_btmi1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_xskpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_lp0cd")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 30.0
+}]
 
 [node name="Kitchen" type="Node2D"]
 
@@ -33,23 +164,36 @@ texture = ExtResource("4_2cp4w")
 script = ExtResource("5_5rbo4")
 
 [node name="LowerCabinetOpen" type="Sprite2D" parent="KitchenCabinetClose"]
-visible = false
 position = Vector2(0, 32.97)
 texture = ExtResource("6_623ma")
 region_rect = Rect2(0, 0, 0.21, 0)
 script = ExtResource("6_byhwe")
 
 [node name="GarbageCan" type="Sprite2D" parent="KitchenCabinetClose"]
-visible = false
 z_index = 1
 position = Vector2(5, 23.3333)
 texture = ExtResource("8_fvf8e")
 
 [node name="GarbageCannot" type="Sprite2D" parent="KitchenCabinetClose"]
-visible = false
 z_index = 1
 position = Vector2(136.667, 25.0001)
 texture = ExtResource("9_rv55n")
 script = ExtResource("6_byhwe")
+
+[node name="Main Emo Kid" type="AnimatedSprite2D" parent="."]
+z_index = 2
+position = Vector2(870, 294)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_ab4u6")
+animation = &"Standing Still"
+offset = Vector2(175, 0)
+script = ExtResource("39_vclun")
+
+[node name="KitchenTable" type="Sprite2D" parent="."]
+z_index = 3
+position = Vector2(0, 392)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("40_rnsgb")
+centered = false
 
 [connection signal="closed" from="KitchenCabinetClose/GarbageCannot" to="Door" method="_on_garbage_cannot_closed"]

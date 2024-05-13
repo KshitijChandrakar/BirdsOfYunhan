@@ -11,7 +11,7 @@ func _ready():
 
 	# Changes a specific shape of the cursor (here, the I-beam shape).
 func _process(delta):
-	if get_rect().has_point(to_local(get_global_mouse_position())):
+	if get_rect().has_point(to_local(get_global_mouse_position())) and visible:
 			Input.set_custom_mouse_cursor(beam, Input.CURSOR_IBEAM)
 			if not click:
 				if ScenePath != "":
@@ -22,7 +22,7 @@ func _input(event):
 		if event.pressed and event.button_index == MOUSE_BUTTON_LEFT and click:
 			if get_rect().has_point(to_local(event.position)):
 				#add_child(scene)
-				if ScenePath != "":
+				if ScenePath != "" and visible:
 					get_tree().change_scene_to_file(ScenePath)
 
 

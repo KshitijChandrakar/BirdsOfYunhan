@@ -1,0 +1,172 @@
+[gd_scene load_steps=38 format=3 uid="uid://dooyftild0qcb"]
+
+[ext_resource type="Texture2D" uid="uid://c3ixcg5hrr36w" path="res://Resources/bgs/elevator.png" id="1_177si"]
+[ext_resource type="Texture2D" uid="uid://p42ov0x4lr2p" path="res://Resources/Arrow.png" id="2_2ka60"]
+[ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="3_0wxas"]
+[ext_resource type="Script" path="res://Scenes/Elevator2.gd" id="4_88oss"]
+[ext_resource type="Texture2D" uid="uid://doq5tx6v7owyq" path="res://Resources/character profilessheet.png" id="5_w7ju4"]
+[ext_resource type="Texture2D" uid="uid://g1qev5xgyjtx" path="res://Resources/Magpie/Magpie 2/Magpie 01_00000.png" id="6_8rfov"]
+[ext_resource type="Texture2D" uid="uid://c3bxm52ik0qrs" path="res://Resources/Magpie/Magpie 2/Magpie 01_00001.png" id="7_ad0q6"]
+[ext_resource type="Texture2D" uid="uid://dw6eu7bq585md" path="res://Resources/Magpie/Magpie 2/Magpie 01_00002.png" id="8_b7nnw"]
+[ext_resource type="Texture2D" uid="uid://d03ya7udkwcyi" path="res://Resources/Magpie/Magpie 2/Magpie 01_00003.png" id="9_pvgge"]
+[ext_resource type="Texture2D" uid="uid://ccyc80555h1r6" path="res://Resources/Magpie/Magpie 2/Magpie 01_00004.png" id="10_dyfda"]
+[ext_resource type="Texture2D" uid="uid://cy47fhe7qrnhj" path="res://Resources/Magpie/Magpie 2/Magpie 01_00005.png" id="11_8lisj"]
+[ext_resource type="Texture2D" uid="uid://dbjjhgm63pipc" path="res://Resources/Magpie/Magpie 2/Magpie 01_00006.png" id="12_gm5vt"]
+[ext_resource type="Texture2D" uid="uid://bqrlp2fbviahf" path="res://Resources/Magpie/Magpie 2/Magpie 01_00007.png" id="13_k7uj5"]
+[ext_resource type="Texture2D" uid="uid://clyid4qpkftxd" path="res://Resources/Magpie/Magpie 2/Magpie 01_00008.png" id="14_i0rgu"]
+[ext_resource type="Texture2D" uid="uid://cdcjllo1i3ewd" path="res://Resources/Magpie/Magpie 2/Magpie 01_00009.png" id="15_x1pr7"]
+[ext_resource type="Texture2D" uid="uid://bdo2lle1p76o0" path="res://Resources/Magpie/Magpie 2/Magpie 01_00010.png" id="16_m3gnh"]
+[ext_resource type="Texture2D" uid="uid://qo70e4jpwgpd" path="res://Resources/Magpie/Magpie 2/Magpie 01_00011.png" id="17_e331n"]
+[ext_resource type="Texture2D" uid="uid://c67lfox8pgs1q" path="res://Resources/Magpie/Magpie 2/Magpie 01_00012.png" id="18_sssmr"]
+[ext_resource type="Texture2D" uid="uid://betg4x5qiskam" path="res://Resources/Magpie/Magpie 2/Magpie 01_00013.png" id="19_4eq5c"]
+[ext_resource type="Texture2D" uid="uid://b48q1vvilyi1a" path="res://Resources/Magpie/Magpie 2/Magpie 01_00014.png" id="20_tp4i4"]
+[ext_resource type="Texture2D" uid="uid://cfuheqigh2vk5" path="res://Resources/Magpie/Magpie 2/Magpie 01_00015.png" id="21_alt42"]
+[ext_resource type="Texture2D" uid="uid://du7oxv8g2ub84" path="res://Resources/Magpie/Magpie 2/Magpie 01_00016.png" id="22_n8585"]
+[ext_resource type="Texture2D" uid="uid://cp7y52mi3gfls" path="res://Resources/Magpie/Magpie 2/Magpie 01_00017.png" id="23_fyhdm"]
+[ext_resource type="Texture2D" uid="uid://de0a7rmqxikbx" path="res://Resources/Magpie/Magpie 2/Magpie 01_00018.png" id="24_5xryp"]
+[ext_resource type="Texture2D" uid="uid://12vqqekltlfe" path="res://Resources/Magpie/Magpie 2/Magpie 01_00019.png" id="25_aib3b"]
+[ext_resource type="Texture2D" uid="uid://qgb61laduk0w" path="res://Resources/Magpie/Magpie 2/Magpie 01_00020.png" id="26_at6v5"]
+[ext_resource type="Texture2D" uid="uid://3anehlhx1hj5" path="res://Resources/Magpie/Magpie 2/Magpie 01_00021.png" id="27_m5tqs"]
+[ext_resource type="Texture2D" uid="uid://b807wgh8o16wy" path="res://Resources/Magpie/Magpie 2/Magpie 01_00022.png" id="28_10ndq"]
+[ext_resource type="Texture2D" uid="uid://u8m88dklhgrf" path="res://Resources/Magpie/Magpie 2/Magpie 01_00023.png" id="29_4s3dm"]
+[ext_resource type="Texture2D" uid="uid://o2m6ywkqagy" path="res://Resources/Magpie/Magpie 2/Magpie 01_00024.png" id="30_0tiks"]
+[ext_resource type="Texture2D" uid="uid://d125l3ikjhbf8" path="res://Resources/Magpie/Magpie 2/Magpie 01_00025.png" id="31_86w6e"]
+[ext_resource type="Texture2D" uid="uid://dbu3l7y2l6ecr" path="res://Resources/Magpie/Magpie 2/Magpie 01_00026.png" id="32_0ti8n"]
+[ext_resource type="Texture2D" uid="uid://csvsp3awido1h" path="res://Resources/Magpie/Magpie 2/Magpie 01_00027.png" id="33_0g20i"]
+[ext_resource type="Script" path="res://GlobalScripts/MainPlayer.gd" id="34_echie"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_oy7rm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ssh7"]
+atlas = ExtResource("5_w7ju4")
+region = Rect2(879, 0, 293, 900)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cjnk6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ssh7")
+}],
+"loop": true,
+"name": &"Standing Still",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("6_8rfov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ad0q6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_b7nnw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pvgge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_dyfda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8lisj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_gm5vt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_k7uj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_i0rgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_x1pr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_m3gnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_e331n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_sssmr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_4eq5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_tp4i4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_alt42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_n8585")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_fyhdm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_5xryp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_aib3b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_at6v5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_m5tqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_10ndq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_4s3dm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_0tiks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_86w6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_0ti8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_0g20i")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 30.0
+}]
+
+[node name="Elevator" type="Node2D"]
+
+[node name="Elevator" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_177si")
+centered = false
+
+[node name="To Lobby" type="Sprite2D" parent="."]
+position = Vector2(64, 312)
+rotation = 3.14159
+scale = Vector2(0.559376, 0.499999)
+texture = ExtResource("2_2ka60")
+script = ExtResource("3_0wxas")
+ScenePath = "res://Scenes/Lobby.tscn"
+
+[node name="Elevator2" type="Sprite2D" parent="."]
+position = Vector2(393, 21)
+scale = Vector2(431, 408)
+texture = SubResource("ImageTexture_oy7rm")
+script = ExtResource("4_88oss")
+ScenePath = "res://Scenes/elevator_2.tscn"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(279, 236)
+scale = Vector2(0.654545, 0.597222)
+sprite_frames = SubResource("SpriteFrames_cjnk6")
+animation = &"Walk"
+flip_h = true
+script = ExtResource("34_echie")

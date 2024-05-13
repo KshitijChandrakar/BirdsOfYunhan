@@ -1,7 +1,8 @@
 extends Sprite2D
 signal showPuzzle
 @export var nodeName = ""
-
+var dots
+var clams
 var arrow = load("res://Resources/cursors/cursornorm-01-01.png")
 var beam = load("res://Resources/cursors/cursorshine-01-01.png")
 func _process(delta):

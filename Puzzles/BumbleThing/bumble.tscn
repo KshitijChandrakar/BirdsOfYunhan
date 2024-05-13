@@ -1,21 +1,71 @@
-[gd_scene load_steps=5 format=3 uid="uid://13apbim5sxqk"]
+[gd_scene load_steps=12 format=3 uid="uid://13apbim5sxqk"]
 
+[ext_resource type="Texture2D" uid="uid://c8p2ohyq17kgf" path="res://Resources/bgs/Bumblr/Background.png" id="1_3im46"]
 [ext_resource type="Texture2D" uid="uid://slmv47cshbir" path="res://Main Player.png" id="1_qlsxd"]
-[ext_resource type="Script" path="res://Puzzles/BumbleThing/Clam.gd" id="2_dc8fn"]
+[ext_resource type="Texture2D" uid="uid://7abltr2vem57" path="res://Resources/bgs/Bumblr/CARD5.png" id="2_88tht"]
+[ext_resource type="Texture2D" uid="uid://p3xma46be5xt" path="res://Resources/bgs/Bumblr/CARD1.png" id="3_ivg5n"]
+[ext_resource type="Texture2D" uid="uid://dbryfmfnvs0kt" path="res://Resources/bgs/Bumblr/CARD4.png" id="4_t2ntv"]
+[ext_resource type="Texture2D" uid="uid://bxbh71f5xeyai" path="res://Resources/bgs/Bumblr/CARD2.png" id="5_dnc5r"]
+[ext_resource type="Texture2D" uid="uid://dvnuiv21y5f0f" path="res://Resources/bgs/Bumblr/CARD6.png" id="6_r237d"]
+[ext_resource type="Texture2D" uid="uid://sdq8f5gjtjj7" path="res://Resources/bgs/Bumblr/CARD3.png" id="7_forjk"]
+[ext_resource type="Script" path="res://Puzzles/BumbleThing/Bumble.gd" id="8_dvgp8"]
+[ext_resource type="Script" path="res://Puzzles/BumbleThing/ClickToVisibleWithOverlay.gd" id="10_2wm6w"]
 
-[sub_resource type="Gradient" id="Gradient_j7dpl"]
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_g8v4l"]
-gradient = SubResource("Gradient_j7dpl")
+[sub_resource type="SpriteFrames" id="SpriteFrames_qu1pw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_88tht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ivg5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_t2ntv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_dnc5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_r237d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_forjk")
+}],
+"loop": true,
+"name": &"clams",
+"speed": 5.0
+}]
 
 [node name="Bumble" type="Node2D"]
+script = ExtResource("8_dvgp8")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(600, 312)
-texture = ExtResource("1_qlsxd")
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_3im46")
+centered = false
 
-[node name="Clam" type="Sprite2D" parent="Background"]
-position = Vector2(1.52588e-05, -56)
-scale = Vector2(3.10127, 3.84569)
-texture = SubResource("GradientTexture2D_g8v4l")
-script = ExtResource("2_dc8fn")
+[node name="Cards" type="AnimatedSprite2D" parent="."]
+position = Vector2(451, 197)
+scale = Vector2(0.552, 0.6)
+sprite_frames = SubResource("SpriteFrames_qu1pw")
+animation = &"clams"
+centered = false
+
+[node name="MainPlayer" type="Sprite2D" parent="."]
+modulate = Color(0.192157, 0.439216, 0, 0.392157)
+position = Vector2(953.5, 346.5)
+scale = Vector2(1.4135, 1.26555)
+texture = ExtResource("1_qlsxd")
+script = ExtResource("10_2wm6w")
+
+[node name="MainPlayer2" type="Sprite2D" parent="."]
+modulate = Color(0.192157, 0.439216, 0, 0.392157)
+position = Vector2(213, 345)
+scale = Vector2(1.4135, 1.26555)
+texture = ExtResource("1_qlsxd")
+script = ExtResource("10_2wm6w")
+Correct = false
+
+[connection signal="selected" from="MainPlayer" to="." method="_on_main_player_selected"]
+[connection signal="selected" from="MainPlayer2" to="." method="_on_main_player_selected"]

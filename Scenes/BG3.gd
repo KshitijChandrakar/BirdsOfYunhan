@@ -1,6 +1,7 @@
 extends Sprite2D
 
-
+var dots = false
+var clams = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -8,10 +9,18 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if clams and dots:
+		visible = true
 	pass
 
 
-func _on_main_player_finished(x):
-	if x:
-		visible = true
+func MakeInvis(x):
+	
+	dots = x
 	pass # Replace with function body.
+
+
+func _on_bumble_done(x):
+	clams = true
+	pass # Replace with function body.
+

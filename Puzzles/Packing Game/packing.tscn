@@ -27,7 +27,6 @@ Total = 271
 metadata/_edit_horizontal_guides_ = [-19.0]
 
 [node name="Background" type="Sprite2D" parent="."]
-visible = false
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_pq4qw")
 centered = false
@@ -1048,7 +1047,7 @@ script = ExtResource("10_dlkv1")
 Total = 129
 
 [node name="RingBox" type="Sprite2D" parent="."]
-position = Vector2(1286, 229)
+position = Vector2(946, 150)
 rotation = -0.486846
 texture = ExtResource("19_k3r1w")
 script = ExtResource("20_nqhmn")

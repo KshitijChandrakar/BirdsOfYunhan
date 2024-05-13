@@ -43,6 +43,7 @@ func _process(delta):
 		runner()
 	if len(startArr) >= total:
 		finished.emit(true)
+		visible = false
 		runner()
 		#End it here somehow
 	

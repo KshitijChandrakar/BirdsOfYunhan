@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://bvxkwe2himw7r"]
+
+[ext_resource type="Texture2D" uid="uid://di6rtkmnkldw3" path="res://Resources/bgs/Airport/airport.png" id="1_3iatt"]
+[ext_resource type="Texture2D" uid="uid://dqxiu7ljtxrkd" path="res://Resources/bgs/Airport/BOARDING PASS.png" id="2_ax7yb"]
+[ext_resource type="Texture2D" uid="uid://b7f2ayuojuxoi" path="res://Resources/bgs/Airport/Fallen Pass.png" id="3_mgq2p"]
+[ext_resource type="Script" path="res://GlobalScripts/ButtonForPuzzleVisible.gd" id="3_wdyvo"]
+[ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="5_bck6e"]
+
+[node name="Airport" type="Node2D"]
+
+[node name="Airport" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_3iatt")
+centered = false
+
+[node name="FallenPass" type="Sprite2D" parent="."]
+position = Vector2(454, 567)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_mgq2p")
+centered = false
+script = ExtResource("3_wdyvo")
+
+[node name="BoardingPass" type="Sprite2D" parent="FallenPass"]
+visible = false
+position = Vector2(-756.667, -945)
+texture = ExtResource("2_ax7yb")
+centered = false
+script = ExtResource("5_bck6e")
+ScenePath = "res://Settings Scenes/Credits.tscn"
