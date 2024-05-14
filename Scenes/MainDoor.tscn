@@ -1,3 +1,19 @@
-[gd_scene format=3 uid="uid://c5b3dvhjhgmdp"]
+[gd_scene load_steps=5 format=3 uid="uid://c5b3dvhjhgmdp"]
+
+[ext_resource type="Script" path="res://Scenes/MainDoor.gd" id="1_f5s15"]
+[ext_resource type="Texture2D" uid="uid://c78keksvalh4j" path="res://Resources/bgs/shoes.png" id="1_f67gp"]
+[ext_resource type="AudioStream" uid="uid://jdds30vspik1" path="res://Resources/Sounds/521296__sonnyestufa__taiwan-garbage-truck-song-yuanlin-city-soundscape-at-3-pm.wav" id="1_i6hw6"]
+[ext_resource type="Script" path="res://GlobalScripts/Loop.gd" id="2_knipo"]
 
 [node name="MainDoor" type="Node2D"]
+script = ExtResource("1_f5s15")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_i6hw6")
+autoplay = true
+script = ExtResource("2_knipo")
+
+[node name="Shoes" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_f67gp")
+centered = false

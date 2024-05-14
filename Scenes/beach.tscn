@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://ccfbok7nyky1a"]
+[gd_scene load_steps=20 format=3 uid="uid://ccfbok7nyky1a"]
 
 [ext_resource type="Texture2D" uid="uid://b8ugu46en3txo" path="res://Resources/bgs/Beach.png" id="1_6qxks"]
 [ext_resource type="Script" path="res://GlobalScripts/ChangeSceneOnSignal.gd" id="2_qwat5"]
@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://Scenes/Besties.gd" id="8_n7jgr"]
 [ext_resource type="Texture2D" uid="uid://bn6jxh6ltoba3" path="res://Resources/bgs/Clams.png" id="9_athgc"]
 [ext_resource type="Texture2D" uid="uid://lubu38qqbi2p" path="res://Resources/bgs/Besties.png" id="11_038ap"]
+[ext_resource type="Texture2D" uid="uid://jgvemkib11fk" path="res://Resources/bgs/Dots/Dot.png" id="12_o5yt6"]
 [ext_resource type="Texture2D" uid="uid://cds4iexop1gcm" path="res://Resources/bgs/BestiesKissing.png" id="13_bn8nb"]
 [ext_resource type="Script" path="res://Scenes/BG3.gd" id="15_cb7o7"]
 [ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/WirePuzzle2.gd" id="16_h7p2i"]
@@ -50,20 +51,31 @@ visible = false
 position = Vector2(468.63, 284.703)
 texture = ExtResource("3_bmlvq")
 script = ExtResource("16_h7p2i")
+Total_Num_Of_Dots = 2
 Base_String = "Icon"
 
 [node name="Door" type="AudioStreamPlayer" parent="Besties/Bg"]
 stream = ExtResource("17_4dgm4")
 
 [node name="Start" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(-226.601, -3.5436)
-scale = Vector2(3.19225, 2.45163)
+position = Vector2(-93.2677, -29.6305)
+scale = Vector2(1.99468, 1.55708)
 texture = ExtResource("5_h0bsd")
 
 [node name="End" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(190.79, -3.54356)
-scale = Vector2(3.06884, 2.03824)
+position = Vector2(16.8772, 31.239)
+scale = Vector2(2.0779, 1.34118)
 texture = ExtResource("7_ee7lu")
+
+[node name="Icon1" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(-90.007, 31.6013)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_o5yt6")
+
+[node name="Icon2" type="Sprite2D" parent="Besties/Bg"]
+position = Vector2(16.8772, -26.732)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_o5yt6")
 
 [node name="BG3" type="Sprite2D" parent="."]
 visible = false

@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cx85851waio7w"]
+[gd_scene load_steps=7 format=3 uid="uid://cx85851waio7w"]
 
 [ext_resource type="Texture2D" uid="uid://daaowa2kuhoso" path="res://Resources/UImenus/Settings/General/generalresolution.png" id="1_s5igg"]
 [ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="2_7frp6"]
 [ext_resource type="AudioStream" uid="uid://byx0nqhyw1usw" path="res://Resources/Sounds/UIsound.mp3" id="3_fdf3f"]
+[ext_resource type="AudioStream" uid="uid://bx8u1cvd4oamu" path="res://Resources/Sounds/toriyama-199714.mp3" id="4_1b71i"]
+[ext_resource type="Script" path="res://GlobalScripts/Loop.gd" id="5_hwsa1"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_i26a3"]
 
@@ -44,3 +46,8 @@ ScenePath = "res://Settings Scenes/Credits.tscn"
 
 [node name="Door" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_fdf3f")
+
+[node name="Loop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_1b71i")
+autoplay = true
+script = ExtResource("5_hwsa1")

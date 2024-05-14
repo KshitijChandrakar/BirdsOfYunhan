@@ -27,7 +27,7 @@ rotation = -0.648727
 scale = Vector2(0.795, 95.18)
 texture = SubResource("GradientTexture1D_pbj1j")
 script = ExtResource("2_ajaec")
-ScenePath = "res://Puzzles/Fridge.tscn"
+ScenePath = "res://Scenes/MainDoor.tscn"
 
 [node name="Icon2" type="Sprite2D" parent="."]
 position = Vector2(116.6, 552.229)

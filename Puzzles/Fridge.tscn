@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c3mncu8u4nv43"]
+[gd_scene load_steps=20 format=3 uid="uid://c3mncu8u4nv43"]
 
 [ext_resource type="Script" path="res://GlobalScripts/Fridge.gd" id="1_7d7ug"]
 [ext_resource type="Texture2D" uid="uid://lgypxdd1d701" path="res://Resources/UImenus/Games/kitchencabop.png" id="1_nnt8y"]
@@ -17,6 +17,8 @@
 [ext_resource type="Texture2D" uid="uid://emn1dd33vhim" path="res://Resources/UImenus/Games/Fridge Objects/Layer 11 copy.png" id="13_s3py7"]
 [ext_resource type="Texture2D" uid="uid://cx0wyefpw584i" path="res://Resources/UImenus/Blank.png" id="14_ccgsh"]
 [ext_resource type="AudioStream" uid="uid://dfen8dx8i3svt" path="res://Resources/Sounds/arrow.mp3" id="17_b1mxu"]
+[ext_resource type="AudioStream" uid="uid://jdds30vspik1" path="res://Resources/Sounds/521296__sonnyestufa__taiwan-garbage-truck-song-yuanlin-city-soundscape-at-3-pm.wav" id="18_2nvjn"]
+[ext_resource type="Script" path="res://GlobalScripts/Loop.gd" id="19_anhnj"]
 
 [node name="Kitche" type="Node2D"]
 script = ExtResource("1_7d7ug")
@@ -116,3 +118,8 @@ script = ExtResource("9_swgfp")
 
 [node name="Door" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("17_b1mxu")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_2nvjn")
+autoplay = true
+script = ExtResource("19_anhnj")

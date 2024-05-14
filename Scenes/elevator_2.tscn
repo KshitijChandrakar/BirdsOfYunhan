@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://1sff75ynx4js"]
+[gd_scene load_steps=7 format=3 uid="uid://1sff75ynx4js"]
 
 [ext_resource type="Texture2D" uid="uid://bew4us5srhmwk" path="res://Resources/bgs/elevator int.png" id="1_obw3y"]
 [ext_resource type="Script" path="res://Scenes/elevator_2.gd" id="1_ued1d"]
 [ext_resource type="Texture2D" uid="uid://doq5tx6v7owyq" path="res://Resources/character profilessheet.png" id="3_8qr3u"]
 [ext_resource type="AudioStream" uid="uid://blvbfj7lsbof8" path="res://Resources/Sounds/liftarriavl.mp3" id="4_rw65d"]
+[ext_resource type="AudioStream" uid="uid://jdds30vspik1" path="res://Resources/Sounds/521296__sonnyestufa__taiwan-garbage-truck-song-yuanlin-city-soundscape-at-3-pm.wav" id="5_ldb1c"]
+[ext_resource type="Script" path="res://GlobalScripts/Loop.gd" id="6_e1y6l"]
 
 [node name="Elevator2" type="Node2D"]
 script = ExtResource("1_ued1d")
@@ -29,3 +31,8 @@ hframes = 6
 
 [node name="Door" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_rw65d")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ldb1c")
+autoplay = true
+script = ExtResource("6_e1y6l")

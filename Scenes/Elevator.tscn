@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://dooyftild0qcb"]
+[gd_scene load_steps=40 format=3 uid="uid://dooyftild0qcb"]
 
 [ext_resource type="Texture2D" uid="uid://c3ixcg5hrr36w" path="res://Resources/bgs/elevator.png" id="1_177si"]
 [ext_resource type="Texture2D" uid="uid://p42ov0x4lr2p" path="res://Resources/Arrow.png" id="2_2ka60"]
@@ -35,6 +35,8 @@
 [ext_resource type="Texture2D" uid="uid://csvsp3awido1h" path="res://Resources/Magpie/Magpie 2/Magpie 01_00027.png" id="33_0g20i"]
 [ext_resource type="Script" path="res://GlobalScripts/MainPlayer.gd" id="34_echie"]
 [ext_resource type="AudioStream" uid="uid://dfen8dx8i3svt" path="res://Resources/Sounds/arrow.mp3" id="35_l4jpj"]
+[ext_resource type="AudioStream" uid="uid://jdds30vspik1" path="res://Resources/Sounds/521296__sonnyestufa__taiwan-garbage-truck-song-yuanlin-city-soundscape-at-3-pm.wav" id="36_uauba"]
+[ext_resource type="Script" path="res://GlobalScripts/Loop.gd" id="37_bdhaq"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_oy7rm"]
 
@@ -170,3 +172,8 @@ script = ExtResource("34_echie")
 
 [node name="Door" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("35_l4jpj")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("36_uauba")
+autoplay = true
+script = ExtResource("37_bdhaq")

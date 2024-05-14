@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://c8pjdit3ah6fm"]
+[gd_scene load_steps=44 format=3 uid="uid://c8pjdit3ah6fm"]
 
 [ext_resource type="Texture2D" uid="uid://b6jm102puhcea" path="res://Resources/bgs/Kitchen/KitchenBg.png" id="1_2c5qb"]
 [ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="2_unkc0"]
@@ -40,6 +40,8 @@
 [ext_resource type="Texture2D" uid="uid://csvsp3awido1h" path="res://Resources/Magpie/Magpie 2/Magpie 01_00027.png" id="38_lp0cd"]
 [ext_resource type="AudioStream" uid="uid://dfen8dx8i3svt" path="res://Resources/Sounds/arrow.mp3" id="40_6ddrs"]
 [ext_resource type="Texture2D" uid="uid://b0e24hwb4wbc5" path="res://Resources/bgs/Kitchen/Kitchen Table.png" id="40_rnsgb"]
+[ext_resource type="AudioStream" uid="uid://jdds30vspik1" path="res://Resources/Sounds/521296__sonnyestufa__taiwan-garbage-truck-song-yuanlin-city-soundscape-at-3-pm.wav" id="41_xn783"]
+[ext_resource type="Script" path="res://GlobalScripts/Loop.gd" id="42_x5bd1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ab4u6"]
 animations = [{
@@ -168,7 +170,6 @@ visible = false
 position = Vector2(0, 32.97)
 texture = ExtResource("6_623ma")
 region_rect = Rect2(0, 0, 0.21, 0)
-script = ExtResource("6_byhwe")
 
 [node name="GarbageCan" type="Sprite2D" parent="KitchenCabinetClose"]
 visible = false
@@ -200,5 +201,10 @@ centered = false
 
 [node name="Door" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("40_6ddrs")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("41_xn783")
+autoplay = true
+script = ExtResource("42_x5bd1")
 
 [connection signal="closed" from="KitchenCabinetClose/GarbageCannot" to="Door1" method="_on_garbage_cannot_closed"]

@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://mbwmiqtm346x"]
+[gd_scene load_steps=9 format=3 uid="uid://mbwmiqtm346x"]
 
 [ext_resource type="Texture2D" uid="uid://wymi4axyuxoi" path="res://Resources/UImenus/Settings/Credits/Connie.png" id="1_7ehxt"]
 [ext_resource type="Script" path="res://GlobalScripts/Door.gd" id="2_cnn0r"]
 [ext_resource type="Script" path="res://GlobalScripts/Hover.gd" id="3_ki6qv"]
 [ext_resource type="AudioStream" uid="uid://byx0nqhyw1usw" path="res://Resources/Sounds/UIsound.mp3" id="4_rc7b1"]
+[ext_resource type="AudioStream" uid="uid://bx8u1cvd4oamu" path="res://Resources/Sounds/toriyama-199714.mp3" id="5_qwm6q"]
+[ext_resource type="Script" path="res://GlobalScripts/Loop.gd" id="6_r7k7t"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_udctg"]
 
@@ -51,6 +53,7 @@ scale = Vector2(181, -32)
 texture = SubResource("ImageTexture_xvr4c")
 script = ExtResource("3_ki6qv")
 ImagePath = "res://Resources/UImenus/Settings/Credits/AashiPandey.png"
+click = true
 
 [node name="Megha Sharma" type="Sprite2D" parent="."]
 position = Vector2(140, 336)
@@ -58,6 +61,7 @@ scale = Vector2(181, -32)
 texture = SubResource("ImageTexture_xvr4c")
 script = ExtResource("3_ki6qv")
 ImagePath = "res://Resources/UImenus/Settings/Credits/MeghaSharma.png"
+click = true
 
 [node name="Kshitij Chandrakar" type="Sprite2D" parent="."]
 position = Vector2(140, 412)
@@ -65,6 +69,7 @@ scale = Vector2(230, -32)
 texture = SubResource("ImageTexture_xvr4c")
 script = ExtResource("3_ki6qv")
 ImagePath = "res://Resources/UImenus/Settings/Credits/KshitijChandrakar.png"
+click = true
 
 [node name="Mayank Morkhade" type="Sprite2D" parent="."]
 position = Vector2(140, 452)
@@ -72,6 +77,7 @@ scale = Vector2(230, -32)
 texture = SubResource("ImageTexture_xvr4c")
 script = ExtResource("3_ki6qv")
 ImagePath = "res://Resources/UImenus/Settings/Credits/MayankMorkhade.png"
+click = true
 
 [node name="Milly Singh" type="Sprite2D" parent="."]
 position = Vector2(517, 336)
@@ -79,6 +85,7 @@ scale = Vector2(152, -32)
 texture = SubResource("ImageTexture_xvr4c")
 script = ExtResource("3_ki6qv")
 ImagePath = "res://Resources/UImenus/Settings/Credits/MillySingh.png"
+click = true
 
 [node name="Connie" type="Sprite2D" parent="."]
 position = Vector2(517, 374)
@@ -86,6 +93,7 @@ scale = Vector2(106, -32)
 texture = SubResource("ImageTexture_xvr4c")
 script = ExtResource("3_ki6qv")
 ImagePath = "res://Resources/UImenus/Settings/Credits/Connie.png"
+click = true
 
 [node name="JadePalaceYaya" type="Sprite2D" parent="."]
 position = Vector2(517, 412)
@@ -93,6 +101,12 @@ scale = Vector2(210, -32)
 texture = SubResource("ImageTexture_xvr4c")
 script = ExtResource("3_ki6qv")
 ImagePath = "res://Resources/UImenus/Settings/Credits/JadePalaceYaya.png"
+click = true
 
 [node name="Door" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_rc7b1")
+
+[node name="Loop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_qwm6q")
+autoplay = true
+script = ExtResource("6_r7k7t")

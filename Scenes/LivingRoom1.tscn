@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://57dewicgnry"]
+[gd_scene load_steps=37 format=3 uid="uid://57dewicgnry"]
 
 [ext_resource type="Texture2D" uid="uid://nkxec6mnywpc" path="res://Resources/bgs/lv1.png" id="1_om438"]
 [ext_resource type="Texture2D" uid="uid://p42ov0x4lr2p" path="res://Resources/Arrow.png" id="2_1nr3e"]
@@ -33,6 +33,8 @@
 [ext_resource type="Texture2D" uid="uid://dbu3l7y2l6ecr" path="res://Resources/Magpie/Magpie 2/Magpie 01_00026.png" id="31_48202"]
 [ext_resource type="Texture2D" uid="uid://csvsp3awido1h" path="res://Resources/Magpie/Magpie 2/Magpie 01_00027.png" id="32_3264p"]
 [ext_resource type="AudioStream" uid="uid://dfen8dx8i3svt" path="res://Resources/Sounds/arrow.mp3" id="34_268g2"]
+[ext_resource type="AudioStream" uid="uid://jdds30vspik1" path="res://Resources/Sounds/521296__sonnyestufa__taiwan-garbage-truck-song-yuanlin-city-soundscape-at-3-pm.wav" id="34_pfi8d"]
+[ext_resource type="Script" path="res://GlobalScripts/Loop.gd" id="35_bjr0r"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2w02p"]
 animations = [{
@@ -157,11 +159,17 @@ script = ExtResource("3_qt2uq")
 ScenePath = "res://Scenes/Kitchen.tscn"
 
 [node name="Main Emo Kid" type="AnimatedSprite2D" parent="."]
-position = Vector2(159, 324)
+position = Vector2(463, 327)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_2w02p")
 animation = &"Standing Still"
 offset = Vector2(175, 0)
+flip_h = true
 
 [node name="Door" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("34_268g2")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("34_pfi8d")
+autoplay = true
+script = ExtResource("35_bjr0r")
