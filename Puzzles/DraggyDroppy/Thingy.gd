@@ -19,17 +19,19 @@ func _ready():
 			var curStr = Base_String + str(i)
 			destination.append(get_node(curStr))
 func _process(_delta):
-	if not placed and draggable:
+	if not placed and draggable :
 		if Input.is_action_pressed("ui_leftMouseClick"):
-			if get_rect().has_point(to_local(get_global_mouse_position())) or dragging:
-				position = get_global_mouse_position()
-				dest = checkDest(position)
-				dragging = true
-			
+			if str(get_path()) == get_parent().path1 or get_parent().path1 == "":
+				if get_rect().has_point(to_local(get_global_mouse_position())) or dragging:
+					position = get_global_mouse_position()
+					dest = checkDest(position)
+					dragging = true
+					get_parent().path1 = str(get_path())
+				
 			
 		elif Input.is_action_just_released("ui_leftMouseClick"):
 			dragging = false
-		#else:
+			get_parent().path1 = ""
 			if dest != null:
 				#offset = 
 				position = get_global_mouse_position()
@@ -37,7 +39,6 @@ func _process(_delta):
 				$"../Door".play()
 			else:
 				position = originalPos
-		
 		pass
 	#print($"../Shelf/MainPlayer".get_rect(), get_rect())
 		

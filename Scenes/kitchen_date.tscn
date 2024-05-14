@@ -18,67 +18,27 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_kwpom")
 centered = false
 script = ExtResource("2_iifqo")
-ScenePath = "res://Scenes/beach.tscn"
+ScenePath = "res://Scenes/beachBench.tscn"
 
 [node name="Bg" type="Sprite2D" parent="."]
 position = Vector2(575, 529)
 texture = ExtResource("3_oohnt")
 script = ExtResource("4_yypby")
-Total_Num_Of_Dots = 10
+Total_Num_Of_Dots = 2
 Base_String = "Icon"
 
 [node name="Icon1" type="Sprite2D" parent="Bg"]
-position = Vector2(-111.955, -30.7799)
+position = Vector2(-93, -3.99998)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_d0sc3")
 
 [node name="Icon2" type="Sprite2D" parent="Bg"]
-position = Vector2(-111.955, 38.7853)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_d0sc3")
-
-[node name="Icon3" type="Sprite2D" parent="Bg"]
-position = Vector2(-203.259, 38.7853)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_d0sc3")
-
-[node name="Icon4" type="Sprite2D" parent="Bg"]
-position = Vector2(-30.7953, -30.7799)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_d0sc3")
-
-[node name="Icon5" type="Sprite2D" parent="Bg"]
-position = Vector2(-30.7953, 38.7853)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_d0sc3")
-
-[node name="Icon6" type="Sprite2D" parent="Bg"]
-position = Vector2(50.3641, 38.7853)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_d0sc3")
-
-[node name="Icon7" type="Sprite2D" parent="Bg"]
-position = Vector2(50.3641, -30.7799)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_d0sc3")
-
-[node name="Icon8" type="Sprite2D" parent="Bg"]
-position = Vector2(131.523, -30.7799)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_d0sc3")
-
-[node name="Icon9" type="Sprite2D" parent="Bg"]
-position = Vector2(131.523, 38.7853)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_d0sc3")
-
-[node name="Icon10" type="Sprite2D" parent="Bg"]
-position = Vector2(212.683, 38.7853)
+position = Vector2(41, -3.99998)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_d0sc3")
 
 [node name="Start" type="Sprite2D" parent="Bg"]
-position = Vector2(-203.259, -30.7799)
+position = Vector2(-293, -3.99999)
 scale = Vector2(1.74683, 1.67345)
 texture = ExtResource("5_ft11d")
 
@@ -86,7 +46,7 @@ texture = ExtResource("5_ft11d")
 stream = ExtResource("8_j8i1i")
 
 [node name="End" type="Sprite2D" parent="Bg"]
-position = Vector2(212.683, -30.7799)
+position = Vector2(233, -0.999992)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_r5c6u")
 

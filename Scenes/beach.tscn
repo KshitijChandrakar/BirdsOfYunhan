@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ccfbok7nyky1a"]
+[gd_scene load_steps=19 format=3 uid="uid://ccfbok7nyky1a"]
 
 [ext_resource type="Texture2D" uid="uid://b8ugu46en3txo" path="res://Resources/bgs/Beach.png" id="1_6qxks"]
 [ext_resource type="Script" path="res://GlobalScripts/ChangeSceneOnSignal.gd" id="2_qwat5"]
@@ -11,12 +11,13 @@
 [ext_resource type="Script" path="res://Scenes/Besties.gd" id="8_n7jgr"]
 [ext_resource type="Texture2D" uid="uid://bn6jxh6ltoba3" path="res://Resources/bgs/Clams.png" id="9_athgc"]
 [ext_resource type="Texture2D" uid="uid://lubu38qqbi2p" path="res://Resources/bgs/Besties.png" id="11_038ap"]
-[ext_resource type="Texture2D" uid="uid://jgvemkib11fk" path="res://Resources/bgs/Dots/Dot.png" id="12_o5yt6"]
 [ext_resource type="Texture2D" uid="uid://cds4iexop1gcm" path="res://Resources/bgs/BestiesKissing.png" id="13_bn8nb"]
 [ext_resource type="Script" path="res://Scenes/BG3.gd" id="15_cb7o7"]
 [ext_resource type="Script" path="res://Puzzles/Wire Puzzle 2/WirePuzzle2.gd" id="16_h7p2i"]
 [ext_resource type="PackedScene" uid="uid://13apbim5sxqk" path="res://Puzzles/BumbleThing/bumble.tscn" id="16_qfaaf"]
 [ext_resource type="AudioStream" uid="uid://byx0nqhyw1usw" path="res://Resources/Sounds/UIsound.mp3" id="17_4dgm4"]
+[ext_resource type="AudioStream" uid="uid://cam7pema6spix" path="res://Resources/Sounds/462758__lg__20180626-taitung-ocean-shoreline-05.wav" id="17_hwstn"]
+[ext_resource type="Script" path="res://GlobalScripts/Loop.gd" id="19_f0gpd"]
 
 [node name="Beach" type="Node2D"]
 
@@ -49,70 +50,19 @@ visible = false
 position = Vector2(468.63, 284.703)
 texture = ExtResource("3_bmlvq")
 script = ExtResource("16_h7p2i")
-Total_Num_Of_Dots = 10
 Base_String = "Icon"
 
 [node name="Door" type="AudioStreamPlayer" parent="Besties/Bg"]
 stream = ExtResource("17_4dgm4")
 
-[node name="Icon1" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(-111.955, -30.7799)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("12_o5yt6")
-
-[node name="Icon2" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(-111.955, 38.7853)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("12_o5yt6")
-
-[node name="Icon3" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(-203.259, 38.7853)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("12_o5yt6")
-
-[node name="Icon4" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(-30.7953, -30.7799)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("12_o5yt6")
-
-[node name="Icon5" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(-30.7953, 38.7853)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("12_o5yt6")
-
-[node name="Icon6" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(50.3641, 38.7853)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("12_o5yt6")
-
-[node name="Icon7" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(50.3641, -30.7799)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("12_o5yt6")
-
-[node name="Icon8" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(131.523, -30.7799)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("12_o5yt6")
-
-[node name="Icon9" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(131.523, 38.7853)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("12_o5yt6")
-
-[node name="Icon10" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(212.683, 38.7853)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("12_o5yt6")
-
 [node name="Start" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(-203.259, -30.7799)
-scale = Vector2(1.74683, 1.67345)
+position = Vector2(-226.601, -3.5436)
+scale = Vector2(3.19225, 2.45163)
 texture = ExtResource("5_h0bsd")
 
 [node name="End" type="Sprite2D" parent="Besties/Bg"]
-position = Vector2(212.683, -30.7799)
-scale = Vector2(1.5, 1.5)
+position = Vector2(190.79, -3.54356)
+scale = Vector2(3.06884, 2.03824)
 texture = ExtResource("7_ee7lu")
 
 [node name="BG3" type="Sprite2D" parent="."]
@@ -127,6 +77,11 @@ visible = false
 
 [node name="Door" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("17_4dgm4")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_hwstn")
+autoplay = true
+script = ExtResource("19_f0gpd")
 
 [connection signal="finished" from="Besties/Bg" to="BG2" method="MakeInvis"]
 [connection signal="finished" from="Besties/Bg" to="Clams" method="MakeInvis"]

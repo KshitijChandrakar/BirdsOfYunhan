@@ -1,4 +1,5 @@
 extends Node
+@export var path1 = ""
 
 @export var Total_Number_Of_Objects = 0
 var allPlaced = true

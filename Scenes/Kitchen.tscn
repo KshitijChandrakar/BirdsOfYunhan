@@ -164,17 +164,20 @@ texture = ExtResource("4_2cp4w")
 script = ExtResource("5_5rbo4")
 
 [node name="LowerCabinetOpen" type="Sprite2D" parent="KitchenCabinetClose"]
+visible = false
 position = Vector2(0, 32.97)
 texture = ExtResource("6_623ma")
 region_rect = Rect2(0, 0, 0.21, 0)
 script = ExtResource("6_byhwe")
 
 [node name="GarbageCan" type="Sprite2D" parent="KitchenCabinetClose"]
+visible = false
 z_index = 1
 position = Vector2(5, 23.3333)
 texture = ExtResource("8_fvf8e")
 
 [node name="GarbageCannot" type="Sprite2D" parent="KitchenCabinetClose"]
+visible = false
 z_index = 1
 position = Vector2(136.667, 25.0001)
 texture = ExtResource("9_rv55n")

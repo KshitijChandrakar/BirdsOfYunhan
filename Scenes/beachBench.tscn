@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://c83wi46clpx2b"]
+
+[ext_resource type="Script" path="res://Scenes/beachBench.gd" id="1_dsm8g"]
+[ext_resource type="Texture2D" uid="uid://cw4s26bjrwca5" path="res://Resources/bgs/beach daysits2.png" id="2_mj347"]
+[ext_resource type="AudioStream" uid="uid://cam7pema6spix" path="res://Resources/Sounds/462758__lg__20180626-taitung-ocean-shoreline-05.wav" id="3_5egls"]
+[ext_resource type="Script" path="res://GlobalScripts/Loop.gd" id="4_4hkgs"]
+
+[node name="Elevator2" type="Node2D"]
+script = ExtResource("1_dsm8g")
+
+[node name="ElevatorInt" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_mj347")
+centered = false
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_5egls")
+autoplay = true
+script = ExtResource("4_4hkgs")
